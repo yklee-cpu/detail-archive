@@ -46,6 +46,7 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .sp img{width:100%;height:auto;display:block}
 .pthumb{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#fff}
 .pthumb img{width:100%;height:100%;object-fit:contain}
+.type.vtag{border-left:1px solid #ddd;padding-left:14px}
 .thumb .gif{position:absolute;top:6px;left:6px;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.55);color:#fff;font-size:9px;font-weight:700;letter-spacing:.04em;line-height:14px;pointer-events:none}
 .card:hover .thumb{border-color:var(--ink)}
 .chip{align-self:flex-start;font-size:13px;font-weight:600;padding:0;letter-spacing:.01em;background:none;color:var(--ink);line-height:1.35}
@@ -94,6 +95,8 @@ const st={cat:"전체",type:"전체"};
 let pages=[],all=[],shown=[];
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const VTAGS=["메커니즘·3D 렌더"];
+TYPE_DESC["메커니즘·3D 렌더"]="피부 단면, 멜라닌·성분 작용 원리, 분자·세포 3D 렌더처럼 원리를 그림으로 보여주는 비주얼 (유형과 별도로 붙는 태그)";
 const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
@@ -110,9 +113,10 @@ function draw(){
   const inCat=all.filter(s=>st.cat==="전체"||s.page.category===st.cat);
   const types=TYPE_ORDER.filter(t=>inCat.some(s=>s.type===t));
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
-    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("");
+    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("")
+    +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}<span class="n">${n}</span></button>`).join("");
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
-  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type);
+  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type));
   if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">이 조건에 맞는 프레임이 아직 없어요.</div>';return;}
   const dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div>${s.pieces.some(x=>x.anim)?'<span class="gif">GIF</span>':''}</div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
