@@ -96,7 +96,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
-Promise.all([fetch("data.json").then(r=>r.json()),fetch("thumbs.json").then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,t])=>{
+Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,t])=>{
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
   thumbs=t.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:"썸네일",url:x.url},th:x}));
   draw();
