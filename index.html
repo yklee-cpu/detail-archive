@@ -39,13 +39,14 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .desc b{color:var(--ink);font-weight:700;margin-right:10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 18px}
 .card{display:flex;flex-direction:column;gap:10px;text-align:left}
-.thumb{aspect-ratio:3/4;overflow:hidden;background:var(--soft);border:1px solid var(--line);border-radius:8px}
+.thumb{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--soft);border:1px solid var(--line);border-radius:8px}
 .thumb img{width:100%;display:block}
 .thumb.short{display:flex;align-items:center}
 .sp{width:100%;overflow:hidden;flex:none}
 .sp img{width:100%;height:auto;display:block}
 .pthumb{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#fff}
 .pthumb img{width:100%;height:100%;object-fit:contain}
+.thumb .gif{position:absolute;top:6px;left:6px;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.55);color:#fff;font-size:9px;font-weight:700;letter-spacing:.04em;line-height:14px;pointer-events:none}
 .card:hover .thumb{border-color:var(--ink)}
 .chip{align-self:flex-start;font-size:13px;font-weight:600;padding:0;letter-spacing:.01em;background:none;color:var(--ink);line-height:1.35}
 .t{font-weight:400;font-size:12px;line-height:1.4;color:var(--ink);text-wrap:balance;margin-top:-6px}
@@ -114,7 +115,7 @@ function draw(){
   shown=inCat.filter(s=>st.type==="전체"||s.type===st.type);
   if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">이 조건에 맞는 프레임이 아직 없어요.</div>';return;}
   const dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
-  $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div></div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
+  $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div>${s.pieces.some(x=>x.anim)?'<span class="gif">GIF</span>':''}</div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
 }
 function retryImg(i){const n=+(i.dataset.r||0);if(n>=4)return;i.dataset.r=n+1;const u=i.getAttribute("src").split("?")[0];setTimeout(()=>{i.src=u+"?r="+(n+1)},600*(n+1))}
