@@ -55,7 +55,7 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .modal{position:fixed;inset:0;background:rgba(10,10,12,.75);z-index:20;display:none;justify-content:center}
 .modal.open{display:flex}
 .sheet{display:flex;width:min(880px,100%);height:100%;background:var(--bg)}
-.viewer{flex:1;overflow-y:auto;background:#fff;min-width:0}
+.viewer{position:relative;flex:1;overflow-y:auto;background:#fff;min-width:0}
 .viewer img{width:100%;height:auto;display:block}
 .viewer .pk{overflow:hidden;width:100%}
 .viewer .pk img{max-width:none}
@@ -67,6 +67,22 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .nav button{flex:1;border:1px solid var(--line);border-radius:6px;padding:8px 0;font-size:13px;background:var(--soft)}
 .nav button:disabled{opacity:.35;cursor:default}
 .close{align-self:flex-end;font-size:13px;color:var(--muted)}
+.cat.bp{margin-left:auto}
+nav#cats{flex:1}
+.blist{display:flex;flex-direction:column;gap:28px}
+.bgrp h3{margin:0 0 10px;font-size:13px;color:var(--accent);font-weight:700;border-bottom:1px solid var(--line);padding-bottom:6px}
+.brow{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:8px 0;border-bottom:1px solid #f0f0f0}
+.brow:hover .bn{text-decoration:underline;text-underline-offset:4px}
+.bth{width:56px;height:56px;flex:none;overflow:hidden;border:1px solid var(--line);border-radius:6px;background:var(--soft)}
+.bth img{width:100%;display:block}
+.bn{font-size:14px;font-weight:500}
+.bn b{font-weight:700;margin-right:6px}
+.bm{font-size:12px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.side .toc{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:2px;margin:0 -6px;font-size:12px}
+.side .toc button{text-align:left;padding:4px 6px;border-radius:4px;line-height:1.35}
+.side .toc button:hover{background:var(--soft)}
+.side .toc .ty{color:var(--muted);display:block;font-size:11px}
+.viewer .secmark{height:0}
 @media (max-width:700px){
   .bar,main{padding-left:16px;padding-right:16px}
   .row1{gap:20px;height:56px}
@@ -106,10 +122,11 @@ Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch("thum
   draw();
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
 function draw(){
-  const cats=["전체",...new Set(pages.map(p=>p.category)),"썸네일"];
-  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  const cats=["전체",...new Set(pages.map(p=>p.category)),"썸네일",BP];
+  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c===BP?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   $("cats").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.cat=b.dataset.c;st.type="전체";draw()});
   if(st.cat==="썸네일"){drawThumbs();return;}
+  if(st.cat===BP){drawBrands();return;}
   const inCat=all.filter(s=>st.cat==="전체"||s.page.category===st.cat);
   const types=TYPE_ORDER.filter(t=>inCat.some(s=>s.type===t));
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
@@ -133,9 +150,33 @@ function drawThumbs(){
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((x,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb pthumb"><img decoding="async" onerror="retryImg(this)" src="img/${esc(x.th.src)}" width="${x.th.w}" height="${x.th.h}" alt=""></div><span class="chip">${esc(x.page.brand)}</span><span class="t">${esc(x.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
 }
+const BP="[브랜드] 제품";
+const CHO="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+const kname=b=>String(b).replace(/\s*\(.*\)\s*$/,"").trim();
+const cho=t=>{const c=t.charCodeAt(0);if(c>=0xAC00&&c<=0xD7A3){const i=Math.floor((c-0xAC00)/588);return "ㄱㄱㄴㄷㄷㄹㅁㅂㅂㅅㅅㅇㅈㅈㅊㅋㅌㅍㅎ"[i]}return /[a-z]/i.test(t[0])?"A–Z":"#"};
+let plist=[],mode="frame";
+function drawBrands(){
+  plist=[...pages].sort((a,b)=>kname(a.brand).localeCompare(kname(b.brand),"ko")||a.product.localeCompare(b.product,"ko"));
+  $("types").innerHTML=`<span class="type">브랜드 가나다순 · 제품 ${plist.length}개</span>`;
+  const groups=[];plist.forEach((p,k)=>{const g=cho(kname(p.brand));if(!groups.length||groups[groups.length-1][0]!==g)groups.push([g,[]]);groups[groups.length-1][1].push([p,k])});
+  $("main").innerHTML=`<div class="blist">${groups.map(([g,ps])=>`<div class="bgrp"><h3>${esc(g)}</h3>${ps.map(([p,k])=>{const t=p.sections[0].thumb;return `<button type="button" class="brow" data-k="${k}"><span class="bth"><img decoding="async" onerror="retryImg(this)" src="img/${esc(t.s)}" style="margin-top:-${(t.y/t.w*100).toFixed(3)}%" alt=""></span><span class="bn"><b>[${esc(kname(p.brand))}]</b>${esc(p.product)}</span><span class="bm">${esc(p.category)} · ${p.sections.length}프레임</span></button>`}).join("")}</div>`).join("")}</div>`;
+  $("main").querySelectorAll(".brow").forEach(b=>b.onclick=()=>openPage(+b.dataset.k));
+}
+const pieceHTML=x=>x.sheet?`<div class="pk" style="aspect-ratio:${x.w}/${x.h}"><img loading="lazy" onerror="retryImg(this)" src="img/${esc(x.sheet)}" width="${x.w}" height="${x.sh}" style="margin-top:-${(x.sy/x.w*100).toFixed(4)}%" alt=""></div>`:`<img loading="lazy" onerror="retryImg(this)" src="img/${esc(x.src)}" width="${x.w}" height="${x.h}" alt="">`;
+function openPage(k){
+  mode="page";cur=k;const p=plist[k];
+  $("viewer").innerHTML=p.sections.map((s,i)=>`<div class="secmark" id="sec${i}"></div>`+s.pieces.map(pieceHTML).join("")).join("");$("viewer").scrollTop=0;
+  $("side").innerHTML=`<button type="button" class="close" id="x">닫기 ✕</button><span class="chip">${esc(kname(p.brand))}</span><h2>${esc(p.product)}</h2>
+  <div class="src">${esc(p.brand)} · ${esc(p.category)} · ${p.sections.length}프레임<br><a href="${esc(p.url)}" target="_blank" rel="noopener">원본 페이지 ↗</a></div>
+  <div class="nav"><button type="button" id="pv" ${k===0?"disabled":""}>← 이전 제품</button><button type="button" id="nx" ${k===plist.length-1?"disabled":""}>다음 제품 →</button></div>
+  <div class="toc">${p.sections.map((s,i)=>`<button type="button" data-i="${i}"><span class="ty">${i+1}. ${esc(s.type)}</span>${esc(s.title)}</button>`).join("")}</div>`;
+  $("x").onclick=close;$("pv").onclick=()=>openPage(k-1);$("nx").onclick=()=>openPage(k+1);
+  $("side").querySelectorAll(".toc button").forEach(b=>b.onclick=()=>{const m=$("sec"+b.dataset.i);$("viewer").scrollTop=m.offsetTop});
+  $("modal").classList.add("open");
+}
 let cur=-1;
 function open(k){
-  cur=k; const s=shown[k];
+  mode="frame";cur=k; const s=shown[k];
   $("viewer").innerHTML=s.pieces.map(x=>x.sheet?`<div class="pk" style="aspect-ratio:${x.w}/${x.h}"><img onerror="retryImg(this)" src="img/${esc(x.sheet)}" width="${x.w}" height="${x.sh}" style="margin-top:-${(x.sy/x.w*100).toFixed(4)}%" alt=""></div>`:`<img onerror="retryImg(this)" src="img/${esc(x.src)}" width="${x.w}" height="${x.h}" alt="">`).join(""); $("viewer").scrollTop=0;
   $("side").innerHTML=`<button type="button" class="close" id="x">닫기 ✕</button><span class="chip">${esc(s.type)}</span><h2>${esc(s.title)}</h2>
   <div class="src">${esc(s.page.brand)} · ${esc(s.page.category)}<br><a href="${esc(s.page.url)}" target="_blank" rel="noopener">원본 페이지 ↗</a></div>
@@ -146,7 +187,7 @@ function open(k){
 $("home").onclick=e=>{e.preventDefault();close();st.cat="전체";st.type="전체";draw();window.scrollTo(0,0)};
 function close(){$("modal").classList.remove("open");cur=-1}
 $("modal").addEventListener("click",e=>{if(e.target.id==="modal")close()});
-document.addEventListener("keydown",e=>{if(cur<0)return;if(e.key==="Escape")close();if(e.key==="ArrowRight"&&cur<shown.length-1)open(cur+1);if(e.key==="ArrowLeft"&&cur>0)open(cur-1)});
+document.addEventListener("keydown",e=>{if(cur<0)return;if(e.key==="Escape")close();const L=mode==="page"?plist:shown,f=mode==="page"?openPage:open;if(e.key==="ArrowRight"&&cur<L.length-1)f(cur+1);if(e.key==="ArrowLeft"&&cur>0)f(cur-1)});
 </script>
 </body>
 </html>
