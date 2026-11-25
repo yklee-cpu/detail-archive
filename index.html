@@ -92,6 +92,10 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .acts .en svg{width:18px;height:18px}
 .enbar{display:flex;align-items:center;gap:10px;color:#7a5a00}
 .enbar button{border:1px solid #e0b400;background:#ffd60a;color:#111;border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600}
+.tokm{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:50}.tokm.open{display:flex}
+.tokb{background:#fff;border-radius:10px;padding:20px;width:min(360px,90vw);font-size:13px}.tokb p{color:#666;margin:8px 0 12px;line-height:1.5}
+.tokb input{width:100%;box-sizing:border-box;border:1px solid #ddd;border-radius:6px;padding:8px}.tokbt{display:flex;justify-content:flex-end;gap:6px;margin-top:12px}
+.tokbt button{border:1px solid #ddd;border-radius:6px;padding:6px 12px;background:#fff}.tokbt #toks{background:#111;color:#fff;border-color:#111}
 .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#111;color:#fff;font-size:13px;padding:8px 14px;border-radius:8px;z-index:40;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 
@@ -118,6 +122,7 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
   <div class="sheet"><div class="viewer" id="viewer"></div><div class="side" id="side"></div></div>
 </div>
 <div class="toast" id="toast"></div>
+<div class="tokm" id="tokm"><div class="tokb"><b>에디터 키 넣기</b><p>⚡ 에너지는 에디터만 고를 수 있어요. 처음 한 번만 넣으면 이 브라우저에서 계속 쓸 수 있어요.</p><input id="toki" type="password" placeholder="github_pat_..." autocomplete="off"><div class="tokbt"><button type="button" id="tokc">취소</button><button type="button" id="toks">저장</button></div></div></div>
 <script>
 const TYPE_ORDER=["공식 판매처", "Hero", "셀럽·인플루언서", "B&A", "그래프", "Hook / Pain Point", "타겟 / 추천 대상", "제품 소개", "USP / Key Benefit", "기능·성분 상세", "인증·수치·임상", "비교", "후기·SNS", "Brand Story", "무드·화보", "정보성 콘텐츠", "How to Use / 사용법", "프로모션 / CTA", "가격 구성", "FAQ", "제품 정보·주의사항", "배송·교환·환불", "Undefined"];
 const TYPE_DESC={"공식 판매처":"정품 인증, 공식 판매처 안내, 가품·유사품 주의 배너","Hero":"페이지에서 제품을 처음 보여주는 대표 키비주얼 (페이지당 1개, 할인 배너는 제외)","셀럽·인플루언서":"셀럽·인플루언서의 사용 장면이나 SNS 캡처 모음","B&A":"사용 전/후 비교 사진, 같은 장면의 시연 전후 (GIF 포함)","그래프":"막대·선 그래프가 중심인 데이터","Hook / Pain Point":"고객의 고민이나 불편을 질문·공감으로 꺼내는 도입부","타겟 / 추천 대상":"이런 분께 추천해요, 사용 대상을 짚어주는 구성","제품 소개":"제품명과 키비주얼이 중심인 제품 등장·라인업 소개","USP / Key Benefit":"핵심 효과·장점을 요약해서 나열","기능·성분 상세":"성분 하나, 기술 하나를 깊게 설명","인증·수치·임상":"인체적용시험, 인증서, 수상, 판매량 등 신뢰 근거","비교":"기존 제품이나 경쟁 제품과 나란히 비교","후기·SNS":"일반 소비자 후기, 리뷰, 사용 인증","Brand Story":"브랜드의 철학, 역사, 개발 이야기를 글로 풀어냄","무드·화보":"설명 없이 분위기를 만드는 화보·이미지 컷","정보성 콘텐츠":"제품 밖의 지식·원리를 알려주는 교육형 콘텐츠","How to Use / 사용법":"사용 방법, 순서, 루틴 안내","프로모션 / CTA":"할인, 증정, 기간 한정, 환불 보장, 이벤트 (위치 무관)","가격 구성":"세트·옵션별 가격표 카드","FAQ":"자주 묻는 질문","제품 정보·주의사항":"상품정보고시, 전성분, 주의사항","배송·교환·환불":"배송 일정, 교환·환불 안내","Undefined":"분류가 애매해서 확인을 기다리는 프레임"};
@@ -128,18 +133,27 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const VTAGS=["메커니즘·3D 렌더"];
 TYPE_DESC["메커니즘·3D 렌더"]="피부·몸 속에서 일어나는 일을 3D CG로 보여주는 장면: 피부 단면·층, 세포·멜라닌·콜라겐 알갱이, 근육·림프 해부, 성분·패치·기기가 피부에 작용하는 장면 (제품 사진·실사 전후·그래프·표는 제외)";
 const EN="에너지";
-TYPE_DESC[EN]="에너지 있다고 고른 장면. 프레임을 열고 ⚡ 버튼으로 고르고, '목록 복사'를 Claude에게 보내면 사이트에 반영돼 모두에게 보여요";
+TYPE_DESC[EN]="에너지 있다고 고른 장면. 프레임을 열고 ⚡ 버튼을 누르면 바로 여기 모이고, 모두에게 보여요 (에디터만 누를 수 있어요)";
 const BOLT='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>';
-let enOn=new Set(),enOff=new Set();
-try{const v=JSON.parse(localStorage.getItem("archive_energy2")||"null");if(v){enOn=new Set(v.on);enOff=new Set(v.off)}}catch(e){}
-let enOld=[];try{enOld=JSON.parse(localStorage.getItem("archive_energy")||"[]")}catch(e){}
-const saveEnergy=()=>{try{localStorage.setItem("archive_energy2",JSON.stringify({on:[...enOn],off:[...enOff]}))}catch(e){}};
+const REPO="yklee-cpu/detail-archive",EFILE="energy.json";
+let energy=new Set(),enSha=null,enBusy=false;
 const fkey=s=>s.th?"th:"+s.th.id:s.page.id+"@"+s.y0;
-const isEn=s=>{const k=fkey(s);return enOn.has(k)||(!!s.energy&&!enOff.has(k))};
-function toggleEn(s){const k=fkey(s);const now=isEn(s);enOn.delete(k);enOff.delete(k);if(now){if(s.energy)enOff.add(k)}else{if(!s.energy)enOn.add(k)}saveEnergy();return !now}
-const enPending=()=>all.filter(x=>{const k=fkey(x);return (enOn.has(k)&&!x.energy)||(enOff.has(k)&&x.energy)}).length;
-async function copyEnergyList(){const keys=all.filter(isEn).map(fkey);const txt="ENERGY "+JSON.stringify(keys);
-  try{await navigator.clipboard.writeText(txt);toast("목록을 복사했어요. Claude에게 붙여넣어 주세요")}catch(e){prompt("이 내용을 복사해서 Claude에게 보내주세요",txt)}}
+const isEn=s=>energy.has(fkey(s));
+const getTok=()=>{try{return localStorage.getItem("archive_gh_token")||""}catch(e){return ""}};
+const b64=t=>btoa(unescape(encodeURIComponent(t)));
+async function ghGet(){const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${EFILE}?t=${Date.now()}`,{headers:{Authorization:"Bearer "+getTok(),Accept:"application/vnd.github+json"},cache:"no-store"});
+  if(r.status===404)return {sha:null,list:[]};if(!r.ok)throw r.status;const j=await r.json();return {sha:j.sha,list:JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))))}}
+async function ghPut(list,sha){const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${EFILE}`,{method:"PUT",headers:{Authorization:"Bearer "+getTok(),Accept:"application/vnd.github+json"},
+  body:JSON.stringify({message:"energy: update",content:b64(JSON.stringify(list,null,0)),...(sha?{sha}:{})})});if(!r.ok)throw r.status;return (await r.json()).content.sha}
+function askToken(){return new Promise(ok=>{const m=$("tokm");m.classList.add("open");const i=$("toki");i.value="";i.focus();
+  $("toks").onclick=()=>{const v=i.value.trim();if(v){try{localStorage.setItem("archive_gh_token",v)}catch(e){}}m.classList.remove("open");ok(!!v)};
+  $("tokc").onclick=()=>{m.classList.remove("open");ok(false)}})}
+async function toggleEn(s,btn){if(enBusy)return;if(!getTok()&&!(await askToken()))return;
+  const k=fkey(s);enBusy=true;btn.disabled=true;
+  try{const cur=await ghGet();const set=new Set(cur.list);const on=!set.has(k);on?set.add(k):set.delete(k);
+    enSha=await ghPut([...set],cur.sha);energy=set;dirty=true;btn.setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요 (모두에게 보여요)":"에너지에서 뺐어요")}
+  catch(e){if(e===401||e===403||e===404){try{localStorage.removeItem("archive_gh_token")}catch(_){}toast("에디터 키가 맞지 않아요. 다시 눌러서 넣어주세요")}else toast("저장하지 못했어요. 잠시 후 다시 눌러주세요")}
+  enBusy=false;btn.disabled=false}
 let dirty=false;
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600)}
 function loadImg(u){return new Promise((ok,no)=>{const i=new Image();i.onload=()=>ok(i);i.onerror=no;i.src=u})}
@@ -159,9 +173,8 @@ async function saveFrame(s){try{let blob,ext;
 const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
-Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,t])=>{
+Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t])=>{
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
-  if(enOld.length){enOld.forEach(k=>{const m=k.match(/^(.*):(\d+)$/);if(!m)return;const x=all.find(s=>s.page.id===m[1]&&s.idx===+m[2]);if(x&&!x.energy)enOn.add(fkey(x))});saveEnergy();try{localStorage.removeItem("archive_energy")}catch(e){}}
   thumbs=t.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:"썸네일",url:x.url},th:x}));
   draw();
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
@@ -179,12 +192,10 @@ function draw(){
     +`<button type="button" class="type vtag" aria-pressed="${st.type===EN}" data-t="${EN}">⚡${EN}<span class="n">${inCat.filter(isEn).length}</span></button>`;
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
   shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type)||(st.type===EN&&isEn(s)));
-  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">'+(st.type===EN?"아직 고른 장면이 없어요. 프레임을 열고 ⚡ 버튼을 눌러보세요.":"이 조건에 맞는 프레임이 아직 없어요.")+'</div>'+(st.type===EN&&enPending()?'<p class="desc enbar">사이트에 아직 반영 안 된 변경 '+enPending()+'개 <button type="button" id="encp">목록 복사</button></p>':'');if($("encp"))$("encp").onclick=copyEnergyList;return;}
-  let dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
-  if(st.type===EN&&enPending())dsc+=`<p class="desc enbar">사이트에 아직 반영 안 된 변경 ${enPending()}개 <button type="button" id="encp">목록 복사</button></p>`;
+  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">'+(st.type===EN?"아직 고른 장면이 없어요. 프레임을 열고 ⚡ 버튼을 눌러보세요.":"이 조건에 맞는 프레임이 아직 없어요.")+'</div>';return;}
+  const dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div>${s.pieces.some(x=>x.anim)?'<span class="gif">GIF</span>':''}</div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
-  if($("encp"))$("encp").onclick=copyEnergyList;
 }
 function retryImg(i){const n=+(i.dataset.r||0);if(n>=4)return;i.dataset.r=n+1;const u=i.getAttribute("src").split("?")[0];setTimeout(()=>{i.src=u+"?r="+(n+1)},600*(n+1))}
 function drawThumbs(){
@@ -231,7 +242,7 @@ function open(k){
   <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${isEn(s)}" title="에너지" aria-label="에너지">${BOLT}</button></div>`;
   $("x").onclick=close; $("pv").onclick=()=>open(k-1); $("nx").onclick=()=>open(k+1);
   $("cp").onclick=()=>copyFrame(s); $("sv").onclick=()=>saveFrame(s);
-  $("en").onclick=()=>{const on=toggleEn(s);dirty=true;$("en").setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요":"에너지에서 뺐어요")};
+  $("en").onclick=()=>toggleEn(s,$("en"));
   $("modal").classList.add("open");
 }
 $("home").onclick=e=>{e.preventDefault();close();st.cat="전체";st.type="전체";draw();window.scrollTo(0,0)};
