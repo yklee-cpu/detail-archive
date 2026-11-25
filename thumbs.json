@@ -1,5 +1,18 @@
 [
  {
+  "id": "jabotiba_20",
+  "brand": "자보티바 (JABOTIBA)",
+  "title": "자보부스터",
+  "tags": [
+   "식품"
+  ],
+  "src": "th_jabotiba_20.webp",
+  "w": 712,
+  "h": 712,
+  "url": "https://jabotiba.co.kr/product/%EC%9E%90%EB%B3%B4%EB%B6%80%EC%8A%A4%ED%84%B0-jabo-booster/20/category/1/display/2/",
+  "archived": "2026-11-25"
+ },
+ {
   "id": "celoraby_94",
   "brand": "셀로라바이 (CELORABY)",
   "title": "포텐션 펜타샷",
