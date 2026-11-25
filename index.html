@@ -86,8 +86,10 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .acts{display:flex;gap:6px}
 .acts button{flex:1;border:1px solid var(--line);border-radius:6px;padding:8px 0;font-size:13px;background:#fff;display:flex;align-items:center;justify-content:center;gap:4px}
 .acts button:hover{border-color:var(--ink)}
-.acts .en[aria-pressed="true"]{background:#fff4c2;border-color:#e0b400;color:#7a5a00;font-weight:600}
-.acts .en svg{width:14px;height:14px}
+.acts .en{flex:0 0 40px;height:36px;padding:0;background:#fff;color:#b0b0b0}
+.acts .en:hover{color:#e0a800;border-color:#e0b400}
+.acts .en[aria-pressed="true"]{background:#ffd60a;border-color:#ffd60a;color:#111}
+.acts .en svg{width:18px;height:18px}
 .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#111;color:#fff;font-size:13px;padding:8px 14px;border-radius:8px;z-index:40;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 
@@ -214,7 +216,7 @@ function open(k){
   $("side").innerHTML=`<button type="button" class="close" id="x">닫기 ✕</button><span class="chip">${esc(s.type)}</span><h2>${esc(s.title)}</h2>
   <div class="src">${esc(s.page.brand)} · ${esc(s.page.category)}<br><a href="${esc(s.page.url)}" target="_blank" rel="noopener">원본 페이지 ↗</a></div>
   <div class="nav"><button type="button" id="pv" ${k===0?"disabled":""}>← 이전</button><button type="button" id="nx" ${k===shown.length-1?"disabled":""}>다음 →</button></div>
-  <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${energy.has(fkey(s))}" title="에너지">${BOLT}<span>에너지</span></button></div>`;
+  <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${energy.has(fkey(s))}" title="에너지" aria-label="에너지">${BOLT}</button></div>`;
   $("x").onclick=close; $("pv").onclick=()=>open(k-1); $("nx").onclick=()=>open(k+1);
   $("cp").onclick=()=>copyFrame(s); $("sv").onclick=()=>saveFrame(s);
   $("en").onclick=()=>{const key=fkey(s);if(energy.has(key))energy.delete(key);else energy.add(key);saveEnergy();dirty=true;const on=energy.has(key);$("en").setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요":"에너지에서 뺐어요")};
