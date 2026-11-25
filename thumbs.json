@@ -1,5 +1,31 @@
 [
  {
+  "id": "nightsaren_15",
+  "brand": "나잇사렌 (NIGHT SAREN)",
+  "title": "퍼플 정 (1단계)",
+  "tags": [
+   "식품"
+  ],
+  "src": "th_nightsaren_15.webp",
+  "w": 712,
+  "h": 712,
+  "url": "https://nightsaren.com/product/1%EB%8B%A8%EA%B3%84-%EB%82%98%EC%9E%87%EC%82%AC%EB%A0%8C-%ED%8D%BC%ED%94%8C/15/category/28/display/1/",
+  "archived": "2026-11-25"
+ },
+ {
+  "id": "solcut_34",
+  "brand": "솔컷 (SOL-CUT)",
+  "title": "비오리젠 솔커트 솔잎응축액 20포",
+  "tags": [
+   "식품"
+  ],
+  "src": "th_solcut_34.webp",
+  "w": 712,
+  "h": 712,
+  "url": "https://solcut.co.kr/product/%EB%B9%84%EC%98%A4%EB%A6%AC%EC%A0%A0-%EC%86%94%EC%BB%A4%ED%8A%B8-20%ED%8F%AC/34/category/1/display/2/",
+  "archived": "2026-11-25"
+ },
+ {
   "id": "frommedi_129",
   "brand": "프롬메디 (frommedi)",
   "title": "아줄렌 EGF 긴급진정 크림 · 블프 특가",
