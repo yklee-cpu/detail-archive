@@ -145,14 +145,20 @@ async function ghGet(){const r=await fetch(`https://api.github.com/repos/${REPO}
   if(r.status===404)return {sha:null,list:[]};if(!r.ok)throw r.status;const j=await r.json();return {sha:j.sha,list:JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))))}}
 async function ghPut(list,sha){const r=await fetch(`https://api.github.com/repos/${REPO}/contents/${EFILE}`,{method:"PUT",headers:{Authorization:"Bearer "+getTok(),Accept:"application/vnd.github+json"},
   body:JSON.stringify({message:"energy: update",content:b64(JSON.stringify(list,null,0)),...(sha?{sha}:{})})});if(!r.ok)throw r.status;return (await r.json()).content.sha}
+let enPend={};try{enPend=JSON.parse(localStorage.getItem("archive_en_pend")||"{}")}catch(e){}
+const savePend=()=>{try{localStorage.setItem("archive_en_pend",JSON.stringify(enPend))}catch(e){}};
+function applyPend(){const now=Date.now();for(const [k,v] of Object.entries(enPend)){if(now-v.t>15*60*1000){delete enPend[k];continue}v.on?energy.add(k):energy.delete(k)}savePend()}
 function askToken(){return new Promise(ok=>{const m=$("tokm");m.classList.add("open");const i=$("toki");i.value="";i.focus();
   $("toks").onclick=()=>{const v=i.value.trim();if(v){try{localStorage.setItem("archive_gh_token",v)}catch(e){}}m.classList.remove("open");ok(!!v)};
   $("tokc").onclick=()=>{m.classList.remove("open");ok(false)}})}
 async function toggleEn(s,btn){if(enBusy)return;if(!getTok()&&!(await askToken()))return;
-  const k=fkey(s);enBusy=true;btn.disabled=true;
-  try{const cur=await ghGet();const set=new Set(cur.list);const on=!set.has(k);on?set.add(k):set.delete(k);
-    enSha=await ghPut([...set],cur.sha);energy=set;dirty=true;btn.setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요 (모두에게 보여요)":"에너지에서 뺐어요")}
-  catch(e){if(e===401||e===403||e===404){try{localStorage.removeItem("archive_gh_token")}catch(_){}toast("에디터 키가 맞지 않아요. 다시 눌러서 넣어주세요")}else toast("저장하지 못했어요. 잠시 후 다시 눌러주세요")}
+  const k=fkey(s),want=!isEn(s);enBusy=true;btn.disabled=true;btn.setAttribute("aria-pressed",want);
+  try{let ok=false;for(let tries=0;tries<3&&!ok;tries++){const cur=await ghGet();const set=new Set(cur.list);
+      for(const [pk,pv] of Object.entries(enPend))if(pk!==k&&Date.now()-pv.t<15*60*1000)(pv.on?set.add(pk):set.delete(pk));
+      want?set.add(k):set.delete(k);
+      try{enSha=await ghPut([...set],cur.sha);ok=true;energy=set}catch(e){if(e!==409&&e!==422)throw e;await new Promise(r=>setTimeout(r,700))}}
+    if(!ok)throw 0;enPend[k]={on:want,t:Date.now()};savePend();dirty=true;toast(want?"⚡ 에너지에 담았어요 (모두에게 보여요)":"에너지에서 뺐어요")}
+  catch(e){btn.setAttribute("aria-pressed",!want);if(e===401||e===403||e===404){try{localStorage.removeItem("archive_gh_token")}catch(_){}toast("에디터 키가 맞지 않아요. 다시 눌러서 넣어주세요")}else toast("저장하지 못했어요. 잠시 후 다시 눌러주세요")}
   enBusy=false;btn.disabled=false}
 let dirty=false;
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600)}
@@ -173,10 +179,11 @@ async function saveFrame(s){try{let blob,ext;
 const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
-Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t])=>{
+Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t])=>{applyPend();
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
   thumbs=t.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:"썸네일",url:x.url},th:x}));
   draw();
+  if(getTok())ghGet().then(c=>{energy=new Set(c.list);enSha=c.sha;applyPend();const y=scrollY;if(cur<0){draw();scrollTo(0,y)}}).catch(()=>{});
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
 function draw(){
   const cats=["전체",...new Set(pages.map(p=>p.category)),"썸네일",BP];
