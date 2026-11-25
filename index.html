@@ -83,6 +83,14 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .side .toc button:hover{background:var(--soft)}
 .side .toc .ty{color:var(--muted);display:block;font-size:11px}
 .viewer .secmark{height:0}
+.acts{display:flex;gap:6px}
+.acts button{flex:1;border:1px solid var(--line);border-radius:6px;padding:8px 0;font-size:13px;background:#fff;display:flex;align-items:center;justify-content:center;gap:4px}
+.acts button:hover{border-color:var(--ink)}
+.acts .en[aria-pressed="true"]{background:#fff4c2;border-color:#e0b400;color:#7a5a00;font-weight:600}
+.acts .en svg{width:14px;height:14px}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#111;color:#fff;font-size:13px;padding:8px 14px;border-radius:8px;z-index:40;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+
 @media (max-width:700px){
   .bar,main{padding-left:16px;padding-right:16px}
   .row1{gap:20px;height:56px}
@@ -105,6 +113,7 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="프레임 크게 보기 ">
   <div class="sheet"><div class="viewer" id="viewer"></div><div class="side" id="side"></div></div>
 </div>
+<div class="toast" id="toast"></div>
 <script>
 const TYPE_ORDER=["공식 판매처", "Hero", "셀럽·인플루언서", "B&A", "그래프", "Hook / Pain Point", "타겟 / 추천 대상", "제품 소개", "USP / Key Benefit", "기능·성분 상세", "인증·수치·임상", "비교", "후기·SNS", "Brand Story", "무드·화보", "정보성 콘텐츠", "How to Use / 사용법", "프로모션 / CTA", "가격 구성", "FAQ", "제품 정보·주의사항", "배송·교환·환불", "Undefined"];
 const TYPE_DESC={"공식 판매처":"정품 인증, 공식 판매처 안내, 가품·유사품 주의 배너","Hero":"페이지에서 제품을 처음 보여주는 대표 키비주얼 (페이지당 1개, 할인 배너는 제외)","셀럽·인플루언서":"셀럽·인플루언서의 사용 장면이나 SNS 캡처 모음","B&A":"사용 전/후 비교 사진, 같은 장면의 시연 전후 (GIF 포함)","그래프":"막대·선 그래프가 중심인 데이터","Hook / Pain Point":"고객의 고민이나 불편을 질문·공감으로 꺼내는 도입부","타겟 / 추천 대상":"이런 분께 추천해요, 사용 대상을 짚어주는 구성","제품 소개":"제품명과 키비주얼이 중심인 제품 등장·라인업 소개","USP / Key Benefit":"핵심 효과·장점을 요약해서 나열","기능·성분 상세":"성분 하나, 기술 하나를 깊게 설명","인증·수치·임상":"인체적용시험, 인증서, 수상, 판매량 등 신뢰 근거","비교":"기존 제품이나 경쟁 제품과 나란히 비교","후기·SNS":"일반 소비자 후기, 리뷰, 사용 인증","Brand Story":"브랜드의 철학, 역사, 개발 이야기를 글로 풀어냄","무드·화보":"설명 없이 분위기를 만드는 화보·이미지 컷","정보성 콘텐츠":"제품 밖의 지식·원리를 알려주는 교육형 콘텐츠","How to Use / 사용법":"사용 방법, 순서, 루틴 안내","프로모션 / CTA":"할인, 증정, 기간 한정, 환불 보장, 이벤트 (위치 무관)","가격 구성":"세트·옵션별 가격표 카드","FAQ":"자주 묻는 질문","제품 정보·주의사항":"상품정보고시, 전성분, 주의사항","배송·교환·환불":"배송 일정, 교환·환불 안내","Undefined":"분류가 애매해서 확인을 기다리는 프레임"};
@@ -114,6 +123,28 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const VTAGS=["메커니즘·3D 렌더"];
 TYPE_DESC["메커니즘·3D 렌더"]="피부 단면, 멜라닌·성분 작용 원리, 분자·세포 3D 렌더처럼 원리를 그림으로 보여주는 비주얼 (유형과 별도로 붙는 태그)";
+const EN="에너지";
+TYPE_DESC[EN]="내가 에너지 있다고 고른 장면. 프레임을 열고 ⚡ 버튼을 누르면 여기 모여요 (이 브라우저에 저장)";
+const BOLT='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>';
+let energy=new Set();try{energy=new Set(JSON.parse(localStorage.getItem("archive_energy")||"[]"))}catch(e){}
+const saveEnergy=()=>{try{localStorage.setItem("archive_energy",JSON.stringify([...energy]))}catch(e){}};
+const fkey=s=>s.th?"th:"+s.th.id:s.page.id+":"+s.idx;
+let dirty=false;
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600)}
+function loadImg(u){return new Promise((ok,no)=>{const i=new Image();i.onload=()=>ok(i);i.onerror=no;i.src=u})}
+async function frameCanvas(s){
+  const W=s.pieces[0].w,H=s.pieces.reduce((a,x)=>a+x.h*W/x.w,0);
+  const c=document.createElement("canvas");c.width=W;c.height=Math.round(H);const g=c.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,c.width,c.height);let y=0;
+  for(const x of s.pieces){const im=await loadImg("img/"+(x.sheet||x.src));const h=x.h*W/x.w;
+    if(x.sheet)g.drawImage(im,0,x.sy,x.w,x.h,0,y,W,h);else g.drawImage(im,0,0,im.naturalWidth,im.naturalHeight,0,y,W,h);y+=h}
+  return c;
+}
+const fname=s=>(String(s.page.brand).replace(/\s*\(.*\)/,"")+"_"+s.title).replace(/[\\/:*?"<>|·]/g," ").replace(/\s+/g,"_").slice(0,80);
+async function copyFrame(s){try{const c=await frameCanvas(s);const b=await new Promise(r=>c.toBlob(r,"image/png"));await navigator.clipboard.write([new ClipboardItem({"image/png":b})]);toast("이미지를 복사했어요")}catch(e){toast("복사가 안 돼요. 저장을 이용해 주세요")}}
+async function saveFrame(s){try{let blob,ext;
+  if(s.pieces.length===1&&s.pieces[0].anim){blob=await (await fetch("img/"+s.pieces[0].src)).blob();ext="webp"}
+  else{const c=await frameCanvas(s);blob=await new Promise(r=>c.toBlob(r,"image/png"));ext="png"}
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=fname(s)+"."+ext;document.body.appendChild(a);a.click();a.remove();toast("저장했어요")}catch(e){toast("저장하지 못했어요")}}
 const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
@@ -132,10 +163,11 @@ function draw(){
   const types=TYPE_ORDER.filter(t=>inCat.some(s=>s.type===t));
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
     .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("")
-    +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}<span class="n">${n}</span></button>`).join("");
+    +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}<span class="n">${n}</span></button>`).join("")
+    +`<button type="button" class="type vtag" aria-pressed="${st.type===EN}" data-t="${EN}">⚡${EN}<span class="n">${inCat.filter(s=>energy.has(fkey(s))).length}</span></button>`;
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
-  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type));
-  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">이 조건에 맞는 프레임이 아직 없어요.</div>';return;}
+  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type)||(st.type===EN&&energy.has(fkey(s))));
+  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">'+(st.type===EN?"아직 고른 장면이 없어요. 프레임을 열고 ⚡ 버튼을 눌러보세요.":"이 조건에 맞는 프레임이 아직 없어요.")+'</div>';return;}
   const dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div>${s.pieces.some(x=>x.anim)?'<span class="gif">GIF</span>':''}</div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
@@ -181,12 +213,15 @@ function open(k){
   $("viewer").innerHTML=s.pieces.map(x=>x.sheet?`<div class="pk" style="aspect-ratio:${x.w}/${x.h}"><img onerror="retryImg(this)" src="img/${esc(x.sheet)}" width="${x.w}" height="${x.sh}" style="margin-top:-${(x.sy/x.w*100).toFixed(4)}%" alt=""></div>`:`<img onerror="retryImg(this)" src="img/${esc(x.src)}" width="${x.w}" height="${x.h}" alt="">`).join(""); $("viewer").scrollTop=0;
   $("side").innerHTML=`<button type="button" class="close" id="x">닫기 ✕</button><span class="chip">${esc(s.type)}</span><h2>${esc(s.title)}</h2>
   <div class="src">${esc(s.page.brand)} · ${esc(s.page.category)}<br><a href="${esc(s.page.url)}" target="_blank" rel="noopener">원본 페이지 ↗</a></div>
-  <div class="nav"><button type="button" id="pv" ${k===0?"disabled":""}>← 이전</button><button type="button" id="nx" ${k===shown.length-1?"disabled":""}>다음 →</button></div>`;
+  <div class="nav"><button type="button" id="pv" ${k===0?"disabled":""}>← 이전</button><button type="button" id="nx" ${k===shown.length-1?"disabled":""}>다음 →</button></div>
+  <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${energy.has(fkey(s))}" title="에너지">${BOLT}<span>에너지</span></button></div>`;
   $("x").onclick=close; $("pv").onclick=()=>open(k-1); $("nx").onclick=()=>open(k+1);
+  $("cp").onclick=()=>copyFrame(s); $("sv").onclick=()=>saveFrame(s);
+  $("en").onclick=()=>{const key=fkey(s);if(energy.has(key))energy.delete(key);else energy.add(key);saveEnergy();dirty=true;const on=energy.has(key);$("en").setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요":"에너지에서 뺐어요")};
   $("modal").classList.add("open");
 }
 $("home").onclick=e=>{e.preventDefault();close();st.cat="전체";st.type="전체";draw();window.scrollTo(0,0)};
-function close(){$("modal").classList.remove("open");cur=-1}
+function close(){$("modal").classList.remove("open");cur=-1;if(dirty){dirty=false;const y=window.scrollY;draw();window.scrollTo(0,y)}}
 $("modal").addEventListener("click",e=>{if(e.target.id==="modal")close()});
 document.addEventListener("keydown",e=>{if(cur<0)return;if(e.key==="Escape")close();const L=mode==="page"?plist:shown,f=mode==="page"?openPage:open;if(e.key==="ArrowRight"&&cur<L.length-1)f(cur+1);if(e.key==="ArrowLeft"&&cur>0)f(cur-1)});
 </script>
