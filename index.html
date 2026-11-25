@@ -194,8 +194,8 @@ function draw(){
   const inCat=all.filter(s=>st.cat==="전체"||s.page.category===st.cat);
   const types=TYPE_ORDER.filter(t=>inCat.some(s=>s.type===t));
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
-    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("")
-    +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}<span class="n">${n}</span></button>`).join("")
+    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}${t==="전체"?"":`<span class="n">${n}</span>`}</button>`).join("")
+    +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}${t==="전체"?"":`<span class="n">${n}</span>`}</button>`).join("")
     +`<button type="button" class="type vtag" aria-pressed="${st.type===EN}" data-t="${EN}">⚡${EN}<span class="n">${inCat.filter(isEn).length}</span></button>`;
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
   shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type)||(st.type===EN&&isEn(s)));
@@ -207,7 +207,7 @@ function draw(){
 function retryImg(i){const n=+(i.dataset.r||0);if(n>=4)return;i.dataset.r=n+1;const u=i.getAttribute("src").split("?")[0];setTimeout(()=>{i.src=u+"?r="+(n+1)},600*(n+1))}
 function drawThumbs(){
   $("types").innerHTML=[["전체",thumbs.length],...THUMB_TAGS.map(t=>[t,thumbs.filter(x=>x.tags.includes(t)).length])]
-    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("");
+    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}${t==="전체"?"":`<span class="n">${n}</span>`}</button>`).join("");
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
   shown=thumbs.filter(x=>st.type==="전체"||x.tags.includes(st.type));
   const dsc=THUMB_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(THUMB_DESC[st.type])}</p>`:"";
