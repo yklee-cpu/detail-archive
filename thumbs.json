@@ -1,5 +1,19 @@
 [
  {
+  "id": "mealit_9",
+  "brand": "밀잇 (MEAL IT)",
+  "title": "식사대용 단백질 쉐이크 · 블프",
+  "tags": [
+   "식품",
+   "블랙프라이데이"
+  ],
+  "src": "th_mealit_9.webp",
+  "w": 712,
+  "h": 712,
+  "url": "https://mealit.kr/product/%EB%B0%80%EC%9E%87-%EC%8B%9D%EC%82%AC%EB%8C%80%EC%9A%A9-%EB%8B%A8%EB%B0%B1%EC%A7%88-%EC%89%90%EC%9D%B4%ED%81%AC/9/category/1/display/3/",
+  "archived": "2026-11-25"
+ },
+ {
   "id": "cruntin_11",
   "brand": "크런틴 (CRUNTIN)",
   "title": "크런치볼 단백질쉐이크",
