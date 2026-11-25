@@ -176,8 +176,8 @@ async function saveFrame(s){try{let blob,ext;
   if(s.pieces.length===1&&s.pieces[0].anim){blob=await (await fetch("img/"+s.pieces[0].src)).blob();ext="webp"}
   else{const c=await frameCanvas(s);blob=await new Promise(r=>c.toBlob(r,"image/png"));ext="png"}
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=fname(s)+"."+ext;document.body.appendChild(a);a.click();a.remove();toast("저장했어요")}catch(e){toast("저장하지 못했어요")}}
-const THUMB_TAGS=["식품","뷰티","비밀링크","블랙프라이데이"];
-const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
+const THUMB_TAGS=["식품","뷰티","기타","비밀링크","블랙프라이데이"];
+const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","기타":"뷰티·식품으로 나누기 애매한 생활·디바이스 상품 썸네일","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
 let thumbs=[];
 Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t])=>{applyPend();
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
@@ -186,7 +186,7 @@ Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE
   if(getTok())ghGet().then(c=>{energy=new Set(c.list);enSha=c.sha;applyPend();const y=scrollY;if(cur<0){draw();scrollTo(0,y)}}).catch(()=>{});
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
 function draw(){
-  const cats=["전체",...new Set(pages.map(p=>p.category)),"썸네일",BP];
+  const CO=["뷰티","건기식","기타"];const cats=["전체",...[...new Set(pages.map(p=>p.category))].sort((a,b)=>(CO.indexOf(a)+99)%99-(CO.indexOf(b)+99)%99),"썸네일",BP];
   $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c===BP?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   $("cats").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.cat=b.dataset.c;st.type="전체";draw()});
   if(st.cat==="썸네일"){drawThumbs();return;}
