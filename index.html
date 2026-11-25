@@ -186,8 +186,8 @@ Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE
   if(getTok())ghGet().then(c=>{energy=new Set(c.list);enSha=c.sha;applyPend();const y=scrollY;if(cur<0){draw();scrollTo(0,y)}}).catch(()=>{});
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
 function draw(){
-  const CO=["뷰티","건기식","기타"];const cats=["전체",...[...new Set(pages.map(p=>p.category))].sort((a,b)=>(CO.indexOf(a)+99)%99-(CO.indexOf(b)+99)%99),"썸네일",BP];
-  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c===BP?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  const CO=["뷰티","건기식","기타"];const cats=["전체",...CO,...[...new Set(pages.map(p=>p.category))].filter(c=>!CO.includes(c)),"썸네일",BP];
+  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c==="썸네일"?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   $("cats").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.cat=b.dataset.c;st.type="전체";draw()});
   if(st.cat==="썸네일"){drawThumbs();return;}
   if(st.cat===BP){drawBrands();return;}
