@@ -90,6 +90,8 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .acts .en:hover{color:#e0a800;border-color:#e0b400}
 .acts .en[aria-pressed="true"]{background:#ffd60a;border-color:#ffd60a;color:#111}
 .acts .en svg{width:18px;height:18px}
+.enbar{display:flex;align-items:center;gap:10px;color:#7a5a00}
+.enbar button{border:1px solid #e0b400;background:#ffd60a;color:#111;border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600}
 .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#111;color:#fff;font-size:13px;padding:8px 14px;border-radius:8px;z-index:40;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 
@@ -126,11 +128,18 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const VTAGS=["메커니즘·3D 렌더"];
 TYPE_DESC["메커니즘·3D 렌더"]="피부·몸 속에서 일어나는 일을 3D CG로 보여주는 장면: 피부 단면·층, 세포·멜라닌·콜라겐 알갱이, 근육·림프 해부, 성분·패치·기기가 피부에 작용하는 장면 (제품 사진·실사 전후·그래프·표는 제외)";
 const EN="에너지";
-TYPE_DESC[EN]="내가 에너지 있다고 고른 장면. 프레임을 열고 ⚡ 버튼을 누르면 여기 모여요 (이 브라우저에 저장)";
+TYPE_DESC[EN]="에너지 있다고 고른 장면. 프레임을 열고 ⚡ 버튼으로 고르고, '목록 복사'를 Claude에게 보내면 사이트에 반영돼 모두에게 보여요";
 const BOLT='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>';
-let energy=new Set();try{energy=new Set(JSON.parse(localStorage.getItem("archive_energy")||"[]"))}catch(e){}
-const saveEnergy=()=>{try{localStorage.setItem("archive_energy",JSON.stringify([...energy]))}catch(e){}};
-const fkey=s=>s.th?"th:"+s.th.id:s.page.id+":"+s.idx;
+let enOn=new Set(),enOff=new Set();
+try{const v=JSON.parse(localStorage.getItem("archive_energy2")||"null");if(v){enOn=new Set(v.on);enOff=new Set(v.off)}}catch(e){}
+let enOld=[];try{enOld=JSON.parse(localStorage.getItem("archive_energy")||"[]")}catch(e){}
+const saveEnergy=()=>{try{localStorage.setItem("archive_energy2",JSON.stringify({on:[...enOn],off:[...enOff]}))}catch(e){}};
+const fkey=s=>s.th?"th:"+s.th.id:s.page.id+"@"+s.y0;
+const isEn=s=>{const k=fkey(s);return enOn.has(k)||(!!s.energy&&!enOff.has(k))};
+function toggleEn(s){const k=fkey(s);const now=isEn(s);enOn.delete(k);enOff.delete(k);if(now){if(s.energy)enOff.add(k)}else{if(!s.energy)enOn.add(k)}saveEnergy();return !now}
+const enPending=()=>all.filter(x=>{const k=fkey(x);return (enOn.has(k)&&!x.energy)||(enOff.has(k)&&x.energy)}).length;
+async function copyEnergyList(){const keys=all.filter(isEn).map(fkey);const txt="ENERGY "+JSON.stringify(keys);
+  try{await navigator.clipboard.writeText(txt);toast("목록을 복사했어요. Claude에게 붙여넣어 주세요")}catch(e){prompt("이 내용을 복사해서 Claude에게 보내주세요",txt)}}
 let dirty=false;
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600)}
 function loadImg(u){return new Promise((ok,no)=>{const i=new Image();i.onload=()=>ok(i);i.onerror=no;i.src=u})}
@@ -152,6 +161,7 @@ const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀�
 let thumbs=[];
 Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,t])=>{
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
+  if(enOld.length){enOld.forEach(k=>{const m=k.match(/^(.*):(\d+)$/);if(!m)return;const x=all.find(s=>s.page.id===m[1]&&s.idx===+m[2]);if(x&&!x.energy)enOn.add(fkey(x))});saveEnergy();try{localStorage.removeItem("archive_energy")}catch(e){}}
   thumbs=t.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:"썸네일",url:x.url},th:x}));
   draw();
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
@@ -166,13 +176,15 @@ function draw(){
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
     .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join("")
     +VTAGS.map(t=>[t,inCat.filter(s=>(s.tags||[]).includes(t)).length]).filter(([t,n])=>n).map(([t,n])=>`<button type="button" class="type vtag" aria-pressed="${st.type===t}" data-t="${esc(t)}">#${esc(t)}<span class="n">${n}</span></button>`).join("")
-    +`<button type="button" class="type vtag" aria-pressed="${st.type===EN}" data-t="${EN}">⚡${EN}<span class="n">${inCat.filter(s=>energy.has(fkey(s))).length}</span></button>`;
+    +`<button type="button" class="type vtag" aria-pressed="${st.type===EN}" data-t="${EN}">⚡${EN}<span class="n">${inCat.filter(isEn).length}</span></button>`;
   $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
-  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type)||(st.type===EN&&energy.has(fkey(s))));
-  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">'+(st.type===EN?"아직 고른 장면이 없어요. 프레임을 열고 ⚡ 버튼을 눌러보세요.":"이 조건에 맞는 프레임이 아직 없어요.")+'</div>';return;}
-  const dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
+  shown=inCat.filter(s=>st.type==="전체"||s.type===st.type||(s.tags||[]).includes(st.type)||(st.type===EN&&isEn(s)));
+  if(!shown.length){$("main").innerHTML=(st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"")+'<div class="empty">'+(st.type===EN?"아직 고른 장면이 없어요. 프레임을 열고 ⚡ 버튼을 눌러보세요.":"이 조건에 맞는 프레임이 아직 없어요.")+'</div>'+(st.type===EN&&enPending()?'<p class="desc enbar">사이트에 아직 반영 안 된 변경 '+enPending()+'개 <button type="button" id="encp">목록 복사</button></p>':'');if($("encp"))$("encp").onclick=copyEnergyList;return;}
+  let dsc=st.type!=="전체"&&TYPE_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(TYPE_DESC[st.type])}</p>`:"";
+  if(st.type===EN&&enPending())dsc+=`<p class="desc enbar">사이트에 아직 반영 안 된 변경 ${enPending()}개 <button type="button" id="encp">목록 복사</button></p>`;
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((s,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb${(s.y1-s.y0)<1333?" short":""}"><div class="sp" style="aspect-ratio:${s.thumb.w}/${s.thumb.h}"><img decoding="async" onerror="retryImg(this)" width="${s.thumb.sw||""}" height="${s.thumb.sh||""}" src="img/${esc(s.thumb.s)}" style="margin-top:-${(s.thumb.y/s.thumb.w*100).toFixed(3)}%" alt=""></div>${s.pieces.some(x=>x.anim)?'<span class="gif">GIF</span>':''}</div><span class="chip">${esc(s.type)}</span><span class="t">${esc(s.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
+  if($("encp"))$("encp").onclick=copyEnergyList;
 }
 function retryImg(i){const n=+(i.dataset.r||0);if(n>=4)return;i.dataset.r=n+1;const u=i.getAttribute("src").split("?")[0];setTimeout(()=>{i.src=u+"?r="+(n+1)},600*(n+1))}
 function drawThumbs(){
@@ -216,10 +228,10 @@ function open(k){
   $("side").innerHTML=`<button type="button" class="close" id="x">닫기 ✕</button><span class="chip">${esc(s.type)}</span><h2>${esc(s.title)}</h2>
   <div class="src">${esc(s.page.brand)} · ${esc(s.page.category)}<br><a href="${esc(s.page.url)}" target="_blank" rel="noopener">원본 페이지 ↗</a></div>
   <div class="nav"><button type="button" id="pv" ${k===0?"disabled":""}>← 이전</button><button type="button" id="nx" ${k===shown.length-1?"disabled":""}>다음 →</button></div>
-  <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${energy.has(fkey(s))}" title="에너지" aria-label="에너지">${BOLT}</button></div>`;
+  <div class="acts"><button type="button" id="cp">복사</button><button type="button" id="sv">저장</button><button type="button" class="en" id="en" aria-pressed="${isEn(s)}" title="에너지" aria-label="에너지">${BOLT}</button></div>`;
   $("x").onclick=close; $("pv").onclick=()=>open(k-1); $("nx").onclick=()=>open(k+1);
   $("cp").onclick=()=>copyFrame(s); $("sv").onclick=()=>saveFrame(s);
-  $("en").onclick=()=>{const key=fkey(s);if(energy.has(key))energy.delete(key);else energy.add(key);saveEnergy();dirty=true;const on=energy.has(key);$("en").setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요":"에너지에서 뺐어요")};
+  $("en").onclick=()=>{const on=toggleEn(s);dirty=true;$("en").setAttribute("aria-pressed",on);toast(on?"⚡ 에너지에 담았어요":"에너지에서 뺐어요")};
   $("modal").classList.add("open");
 }
 $("home").onclick=e=>{e.preventDefault();close();st.cat="전체";st.type="전체";draw();window.scrollTo(0,0)};
