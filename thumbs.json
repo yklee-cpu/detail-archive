@@ -1,624 +1,637 @@
 [
- {
-  "id": "cepolab_40",
-  "brand": "세포랩 (cepoLAB)",
-  "title": "바이오제닉 에센스 90% 하이드레이션",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_cepolab_40.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://cepolab.com/product/%EC%84%B8%ED%8F%AC%EB%9E%A9-%EB%B0%94%EC%9D%B4%EC%98%A4%EC%A0%9C%EB%8B%89-%EC%97%90%EC%84%BC%EC%8A%A4-90-%ED%95%98%EC%9D%B4%EB%93%9C%EB%A0%88%EC%9D%B4%EC%85%98-155ml/40/category/1/display/2/",
-  "archived": "2026-11-26"
- },
- {
-  "id": "propermarket_427",
-  "brand": "프로퍼마켓 (PROPER MARKET)",
-  "title": "매마샐 매일 마시는 샐러드",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_propermarket_427.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://propermarket.co.kr/goods/goods_view.php?goodsNo=1000000427",
-  "archived": "2026-11-26"
- },
- {
-  "id": "jamiet_59",
-  "brand": "재미어트 (jamiet)",
-  "title": "가정용 스파인코렉터 바로폼",
-  "tags": [
-   "기타"
-  ],
-  "src": "th_jamiet_59.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://m.jamietshop.co.kr/product/detail.html?product_no=59",
-  "archived": "2026-11-25"
- },
- {
-  "id": "mealit_9",
-  "brand": "밀잇 (MEAL IT)",
-  "title": "식사대용 단백질 쉐이크 · 블프",
-  "tags": [
-   "식품",
-   "블랙프라이데이"
-  ],
-  "src": "th_mealit_9.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://mealit.kr/product/%EB%B0%80%EC%9E%87-%EC%8B%9D%EC%82%AC%EB%8C%80%EC%9A%A9-%EB%8B%A8%EB%B0%B1%EC%A7%88-%EC%89%90%EC%9D%B4%ED%81%AC/9/category/1/display/3/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "cruntin_11",
-  "brand": "크런틴 (CRUNTIN)",
-  "title": "크런치볼 단백질쉐이크",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_cruntin_11.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://cruntin.com/product/%ED%81%AC%EB%9F%B0%ED%8B%B4-%ED%81%AC%EB%9F%B0%EC%B9%98%EB%B3%BC-%EB%8B%A8%EB%B0%B1%EC%A7%88%EC%89%90%EC%9D%B4%ED%81%AC-%EC%B5%9C%EB%8C%80-51/11/category/59/display/1/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "youngranu_503",
-  "brand": "영라뉴 (YOUNGRANU)",
-  "title": "장용성 파비플로라 PRO · 블프",
-  "tags": [
-   "식품",
-   "블랙프라이데이"
-  ],
-  "src": "th_youngranu_503.webp",
-  "w": 712,
-  "h": 949,
-  "url": "https://youngranu.co.kr/product/detail.html?product_no=503&cate_no=1&display_group=4",
-  "archived": "2026-11-25"
- },
- {
-  "id": "seorimax_9",
-  "brand": "서리맥스 (SEORIMAX)",
-  "title": "129발효서리태",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_seorimax_9.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://seorimax.co.kr/product/%EA%B3%B5%EC%8B%9D-%EC%84%9C%EB%A6%AC%EB%A7%A5%EC%8A%A4-129%EB%B0%9C%ED%9A%A8%EC%84%9C%EB%A6%AC%ED%83%9C-1%EB%B0%95%EC%8A%A4-500mg-60%EC%A0%95/9/category/1/display/2/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "arucheum_74",
-  "brand": "아르채움 (ARUCHEUM)",
-  "title": "양베진 MAX · 최저가 비밀링크",
-  "tags": [
-   "식품",
-   "비밀링크"
-  ],
-  "src": "th_arucheum_74.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://arucheum.co.kr/product/detail.html?product_no=74&cate_no=55&display_group=1",
-  "archived": "2026-11-25"
- },
- {
-  "id": "littlepearly_125",
-  "brand": "리틀펄리 (LITTLE PEARLY)",
-  "title": "자일리톨 락토 캔디 · 블프",
-  "tags": [
-   "식품",
-   "블랙프라이데이"
-  ],
-  "src": "th_littlepearly_125.webp",
-  "w": 712,
-  "h": 713,
-  "url": "https://littlepearly.com/18/?idx=125",
-  "archived": "2026-11-25"
- },
- {
-  "id": "dentios_51",
-  "brand": "덴티오스 (DENTIOS)",
-  "title": "덴티오클린 구강유산균",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_dentios_51.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://dentios.co.kr/product/1/51",
-  "archived": "2026-11-25"
- },
- {
-  "id": "antical_30",
-  "brand": "안티칼 (Antical)",
-  "title": "알파 에이징핏 톤업워터",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_antical_30.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://antical.co.kr/product/%EC%95%88%ED%8B%B0%EC%B9%BC-%EC%95%8C%ED%8C%8C-%EC%97%90%EC%9D%B4%EC%A7%95%ED%95%8F-%ED%86%A4%EC%97%85%EC%9B%8C%ED%84%B0-aging-fit/30/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "jabotiba_20",
-  "brand": "자보티바 (JABOTIBA)",
-  "title": "자보부스터",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_jabotiba_20.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://jabotiba.co.kr/product/%EC%9E%90%EB%B3%B4%EB%B6%80%EC%8A%A4%ED%84%B0-jabo-booster/20/category/1/display/2/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "celoraby_94",
-  "brand": "셀로라바이 (CELORABY)",
-  "title": "포텐션 펜타샷",
-  "tags": [
-   "기타"
-  ],
-  "src": "th_celoraby_94.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://celoraby.com/product/%EC%8A%A4%ED%82%A8%EC%98%A4%ED%94%84%EB%84%88-%ED%8F%AC%ED%85%90%EC%85%98-%ED%8E%9C%ED%83%80%EC%83%B7/94/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "outcoma_12",
-  "brand": "아웃코마 (outcoma)",
-  "title": "디오스톡 DHR 컴플렉스",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_outcoma_12.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://outcoma.com/product/%EB%94%94%EC%98%A4%EC%8A%A4%ED%86%A1-dhr-complex-premium-formula/12/category/24/display/1/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "soltice_89",
-  "brand": "솔티스 (Soltice)",
-  "title": "혈관 클리어 세트 · 블프",
-  "tags": [
-   "식품",
-   "블랙프라이데이"
-  ],
-  "src": "th_soltice_89.webp",
-  "w": 712,
-  "h": 961,
-  "url": "https://soltice.kr/surl/P/89",
-  "archived": "2026-11-25"
- },
- {
-  "id": "vwell_11",
-  "brand": "브이웰 (VWELL)",
-  "title": "브로멜라인 60정",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_vwell_11.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://vwell.kr/product/vwell-%EB%B8%8C%EC%9D%B4%EC%9B%B0-%EB%B8%8C%EB%A1%9C%EB%A9%9C%EB%9D%BC%EC%9D%B8-60%EC%A0%95/11/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "silimazen_29",
-  "brand": "시리마젠 (Silimazen)",
-  "title": "액체 밀크씨슬",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_silimazen_29.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://silimazen.com/product/3%EA%B0%9C%EC%9B%94-%EB%B6%84-%EC%8B%9C%EB%A6%AC%EB%A7%88%EC%A0%A0-%EC%95%A1%EC%B2%B4-%EB%B0%80%ED%81%AC%EC%94%A8%EC%8A%AC-%EC%8B%A4%EB%A6%AC%EB%A7%88%EB%85%B8%EC%9D%B4%EB%93%9C-%EB%B3%B5%ED%95%A9-%EC%84%B1%EB%B6%84-%EC%8B%A4%EB%A6%AC%EB%A7%88%EC%A0%A0/29/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "zuki_ssg",
-  "brand": "주키 (zooki)",
-  "title": "리포조말 콜라겐 5000mg",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_zuki_ssg.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000602689186",
-  "archived": "2026-11-25"
- },
- {
-  "id": "epais_213",
-  "brand": "에이페 (epais)",
-  "title": "스칼프 부스팅 앰플 EX / 릴리프 · 블프",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_epais_213.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://www.epais.kr/product/detail.html?product_no=213",
-  "archived": "2026-11-25"
- },
- {
-  "id": "rawdive_26",
-  "brand": "로다이브 (RAWDIVE)",
-  "title": "유산균 64+ 장벽 크림 · 블프",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_rawdive_26.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://rawdive.shop/product/detail.html?product_no=26",
-  "archived": "2026-11-25"
- },
- {
-  "id": "meditherapy_2059",
-  "brand": "메디테라피 (MEDITHERAPY)",
-  "title": "흔적 리페어 루틴 · 블프",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_meditherapy_2059.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://meditherapy.co.kr/product/detail.html?product_no=2059&cate_no=158&display_group=1",
-  "archived": "2026-11-25"
- },
- {
-  "id": "gyeolhaus_53",
-  "brand": "결 하우스 (GYEOL HAUS)",
-  "title": "올리브 앤 레몬 글로우 하이드로겔 마스크",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_gyeolhaus_53.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://gyeolhaus.co.kr/product/%EC%9D%B4%EB%8B%AC%EC%9D%98pick3%EB%A7%A4-%EA%B2%B0-%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%98%AC%EB%A6%AC%EB%B8%8C-%EC%95%A4-%EB%A0%88%EB%AA%AC-%EA%B8%80%EB%A1%9C%EC%9A%B0-%ED%95%98%EC%9D%B4%EB%93%9C%EB%A1%9C%EA%B2%94-%EB%A7%88%EC%8A%A4%ED%81%AC/53/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "medicube_2491",
-  "brand": "메디큐브 (medicube)",
-  "title": "광심이팩 콜라겐 우유 랩핑 마스크",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_medicube_2491.webp",
-  "w": 712,
-  "h": 759,
-  "url": "https://themedicube.co.kr/product/%EA%B4%91%EC%8B%AC%EC%9D%B4%ED%8C%A9-%EC%BD%9C%EB%9D%BC%EA%B2%90-%EC%9A%B0%EC%9C%A0-%EB%9E%A9%ED%95%91-%EB%A7%88%EC%8A%A4%ED%81%AC/2491/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "essl_108",
-  "brand": "에슬 (essl)",
-  "title": "센텔라 포어리스 패치",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_essl_108.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://essl.kr/product/detail.html?product_no=108&cate_no=54&display_group=1",
-  "archived": "2026-11-25"
- },
- {
-  "id": "oable_78",
-  "brand": "오어블 (Oable)",
-  "title": "포어 매트릭스 바이오 셀룰로오스 마스크 팩 · 블프",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_oable_78.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://oable.kr/product/%ED%8F%AC%EC%96%B4-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EB%B0%94%EC%9D%B4%EC%98%A4-%EC%85%80%EB%A3%B0%EB%A1%9C%EC%98%A4%EC%8A%A4-%EB%A7%88%EC%8A%A4%ED%81%AC-%ED%8C%A9/78/category/1/display/3/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "sonatural_2172586",
-  "brand": "쏘내추럴 (so natural)",
-  "title": "마이크로 낫 세범 타겟 필름 마스크",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_sonatural_2172586.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://www.sonatural.co.kr/shop/shopdetail.html?branduid=2172586",
-  "archived": "2026-11-25"
- },
- {
-  "id": "nightsaren_15",
-  "brand": "나잇사렌 (NIGHT SAREN)",
-  "title": "퍼플 정 (1단계)",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_nightsaren_15.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://nightsaren.com/product/1%EB%8B%A8%EA%B3%84-%EB%82%98%EC%9E%87%EC%82%AC%EB%A0%8C-%ED%8D%BC%ED%94%8C/15/category/28/display/1/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "solcut_34",
-  "brand": "솔컷 (SOL-CUT)",
-  "title": "비오리젠 솔커트 솔잎응축액 20포",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_solcut_34.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://solcut.co.kr/product/%EB%B9%84%EC%98%A4%EB%A6%AC%EC%A0%A0-%EC%86%94%EC%BB%A4%ED%8A%B8-20%ED%8F%AC/34/category/1/display/2/",
-  "archived": "2026-11-25"
- },
- {
-  "id": "frommedi_129",
-  "brand": "프롬메디 (frommedi)",
-  "title": "아줄렌 EGF 긴급진정 크림 · 블프 특가",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_frommedi_129.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://frommedi.co.kr/product/detail.html?product_no=129&cate_no=1&display_group=2",
-  "archived": "2026-11-25"
- },
- {
-  "id": "medicube_1717",
-  "brand": "메디큐브 (medicube)",
-  "title": "PDRN 핑크 펩타이드 앰플 · 블프",
-  "tags": [
-   "뷰티",
-   "블랙프라이데이"
-  ],
-  "src": "th_medicube_1717.webp",
-  "w": 712,
-  "h": 759,
-  "url": "https://themedicube.co.kr/product/detail.html?product_no=1717",
-  "archived": "2026-11-25"
- },
- {
-  "id": "klarherz_16",
-  "brand": "클라헤르츠 (Klarherz)",
-  "title": "옵틱3 · 한정수량 비밀링크",
-  "tags": [
-   "비밀링크"
-  ],
-  "src": "th_klarherz_16.webp",
-  "w": 712,
-  "h": 712,
-  "url": "https://klarherz.com/product/detail.html?product_no=16",
-  "archived": "2026-11-25"
- },
- {
-  "id": "celladix_90",
-  "brand": "셀라딕스 (Celladix)",
-  "title": "트리플 레티놀 워시 필 · 블프 66%",
-  "tags": [
-   "블랙프라이데이"
-  ],
-  "src": "th_celladix_90.webp",
-  "w": 712,
-  "h": 850,
-  "url": "https://celladix.co.kr/product/detail.html?product_no=90&cate_no=1&display_group=2",
-  "archived": "2026-11-23"
- },
- {
-  "id": "celladix_219",
-  "brand": "셀라딕스 (Celladix)",
-  "title": "올데이 트러블 세트 · 1+1 특가",
-  "tags": [
-   "블랙프라이데이"
-  ],
-  "src": "th_celladix_219.webp",
-  "w": 712,
-  "h": 850,
-  "url": "https://celladix.co.kr/product/detail.html?product_no=219&cate_no=1&display_group=2",
-  "archived": "2026-11-23"
- },
- {
-  "id": "foodology_2711",
-  "brand": "푸드올로지 (FOODOLOGY)",
-  "title": "전소미 3주 식단 세트 · 런칭 56%",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_foodology_2711.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://food-ology.co.kr/product/detail.html?product_no=2711&cate_no=74&display_group=1",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_hestel",
-  "brand": "헤스텔 (hestel)",
-  "title": "3세대 브러시형 헤어세럼픽서 · 한지혜 PICK",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_hestel.webp",
-  "w": 750,
-  "h": 750,
-  "url": "https://hestel.net/product/detail.html?product_no=13&cate_no=42&display_group=1",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_eiom",
-  "brand": "이옴 (EIOM)",
-  "title": "트러블 바이옴 클리어링 세럼",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_eiom.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://eiom.co.kr/surl/P/188",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_celladix_mask",
-  "brand": "셀라딕스 (Celladix)",
-  "title": "바이오 포어 케어 셀룰로오스 마스크",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_celladix_mask.webp",
-  "w": 800,
-  "h": 955,
-  "url": "https://celladix.co.kr/product/detail.html?product_no=169&cate_no=24&display_group=1",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_celladix_ampoule",
-  "brand": "셀라딕스 (Celladix)",
-  "title": "세범 밸런싱 131 앰플",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_celladix_ampoule.webp",
-  "w": 800,
-  "h": 955,
-  "url": "https://celladix.co.kr/product/detail.html?product_no=10&cate_no=24&display_group=1",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_toun28_booster",
-  "brand": "톤28 (TOUN28)",
-  "title": "블루 펩타이드 시카 스킨 부스터",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_toun28_booster.webp",
-  "w": 800,
-  "h": 960,
-  "url": "https://www.toun28.com/renew/product/1895",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_toun28_serum",
-  "brand": "톤28 (TOUN28)",
-  "title": "블루 펩타이드 고체 세럼",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_toun28_serum.webp",
-  "w": 800,
-  "h": 960,
-  "url": "https://www.toun28.com/renew/product/2096",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_veroza_ruby",
-  "brand": "베로자 (VEROZA)",
-  "title": "멜라틴 루비샷 화이트트러플 PDRN",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_veroza_ruby.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://veroza.kr/product/%EB%B2%A0%EB%A1%9C%EC%9E%90-%EB%A9%9C%EB%9D%BC%ED%8B%B4-%EB%A3%A8%EB%B9%84%EC%83%B7-%ED%99%94%EC%9D%B4%ED%8A%B8%ED%8A%B8%EB%9F%AC%ED%94%8Cpdrn/13/category/24/display/1/",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_veroza_lip",
-  "brand": "베로자 (VEROZA)",
-  "title": "듀얼립 24시간 밀착 볼륨틴트",
-  "tags": [
-   "뷰티"
-  ],
-  "src": "th_p_veroza_lip.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://veroza.kr/product/%EB%B2%A0%EB%A1%9C%EC%9E%90-%EB%93%80%EC%96%BC%EB%A6%BD-24%EC%8B%9C%EA%B0%84-%EB%B0%80%EC%B0%A9-%EB%B3%BC%EB%A5%A8%ED%8B%B4%ED%8A%B8/15/category/24/display/1/",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_wiseron",
-  "brand": "위세론 (Wiseron)",
-  "title": "헬리코부스터 · 한정 혜택 50%",
-  "tags": [
-   "비밀링크"
-  ],
-  "src": "th_p_wiseron.webp",
-  "w": 700,
-  "h": 700,
-  "url": "https://wiseron.co.kr/surl/p/18",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_tigermorning",
-  "brand": "타이거모닝",
-  "title": "진저샷 오리지널 보틀",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_p_tigermorning.webp",
-  "w": 700,
-  "h": 850,
-  "url": "https://tiger-morning.com/product/%ED%83%80%EC%9D%B4%EA%B1%B0%EB%AA%A8%EB%8B%9D-%EC%A7%84%EC%A0%80%EC%83%B7-%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90-%EB%B3%B4%ED%8B%80/25/category/1/display/2/",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_lemonery",
-  "brand": "레모너리",
-  "title": "고체레몬즙 트리플",
-  "tags": [
-   "식품"
-  ],
-  "src": "th_p_lemonery.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://lemonery.co.kr/product/%EA%B3%B5%EC%8B%9D-%EA%B3%A0%EC%B2%B4%EB%A0%88%EB%AA%AC%EC%A6%99-%EB%A0%88%EB%AA%A8%EB%84%88%EB%A6%AC-1%EB%B0%95%EC%8A%A4-%ED%8A%B8%EB%A6%AC%ED%94%8C-600mg-x-60%EC%A0%95/27/category/1/display/2/",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_periderm",
-  "brand": "페리덤",
-  "title": "덴토락 구강유산균 껌 · 블프 최대 57%",
-  "tags": [
-   "블랙프라이데이"
-  ],
-  "src": "th_p_periderm.webp",
-  "w": 700,
-  "h": 700,
-  "url": "https://periderm.co.kr/product/10%EC%9B%94-pick-%ED%8E%98%EB%A6%AC%EB%8D%A4-%EB%8D%B4%ED%86%A0%EB%9D%BD-%EA%B5%AC%EA%B0%95%EC%9C%A0%EC%82%B0%EA%B7%A0-%EA%BB%8C/11/category/1/display/2/",
-  "archived": "2026-11-23"
- },
- {
-  "id": "p_purexin",
-  "brand": "퓨렉신",
-  "title": "우로비콘 · 비밀 링크 특가 최대 36%",
-  "tags": [
-   "비밀링크"
-  ],
-  "src": "th_p_purexin.webp",
-  "w": 800,
-  "h": 800,
-  "url": "https://purexin.kr/product/detail.html?product_no=28",
-  "archived": "2026-11-23"
- }
+{
+"id": "skinweather_56",
+"brand": "스킨웨더 (skinweather)",
+"title": "스톰 크림 & 마스크 SET",
+"tags": [
+"뷰티"
+],
+"src": "th_skinweather_56.webp",
+"w": 712,
+"h": 712,
+"url": "https://m.skinweather.kr/product/detail.html?product_no=56&cate_no=53&display_group=1",
+"archived": "2026-11-26"
+},
+{
+"id": "cepolab_40",
+"brand": "세포랩 (cepoLAB)",
+"title": "바이오제닉 에센스 90% 하이드레이션",
+"tags": [
+"뷰티"
+],
+"src": "th_cepolab_40.webp",
+"w": 712,
+"h": 712,
+"url": "https://cepolab.com/product/%EC%84%B8%ED%8F%AC%EB%9E%A9-%EB%B0%94%EC%9D%B4%EC%98%A4%EC%A0%9C%EB%8B%89-%EC%97%90%EC%84%BC%EC%8A%A4-90-%ED%95%98%EC%9D%B4%EB%93%9C%EB%A0%88%EC%9D%B4%EC%85%98-155ml/40/category/1/display/2/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_427",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "매마샐 매일 마시는 샐러드",
+"tags": [
+"식품"
+],
+"src": "th_propermarket_427.webp",
+"w": 712,
+"h": 712,
+"url": "https://propermarket.co.kr/goods/goods_view.php?goodsNo=1000000427",
+"archived": "2026-11-26"
+},
+{
+"id": "jamiet_59",
+"brand": "재미어트 (jamiet)",
+"title": "가정용 스파인코렉터 바로폼",
+"tags": [
+"기타"
+],
+"src": "th_jamiet_59.webp",
+"w": 712,
+"h": 712,
+"url": "https://m.jamietshop.co.kr/product/detail.html?product_no=59",
+"archived": "2026-11-25"
+},
+{
+"id": "mealit_9",
+"brand": "밀잇 (MEAL IT)",
+"title": "식사대용 단백질 쉐이크 · 블프",
+"tags": [
+"식품",
+"블랙프라이데이"
+],
+"src": "th_mealit_9.webp",
+"w": 712,
+"h": 712,
+"url": "https://mealit.kr/product/%EB%B0%80%EC%9E%87-%EC%8B%9D%EC%82%AC%EB%8C%80%EC%9A%A9-%EB%8B%A8%EB%B0%B1%EC%A7%88-%EC%89%90%EC%9D%B4%ED%81%AC/9/category/1/display/3/",
+"archived": "2026-11-25"
+},
+{
+"id": "cruntin_11",
+"brand": "크런틴 (CRUNTIN)",
+"title": "크런치볼 단백질쉐이크",
+"tags": [
+"식품"
+],
+"src": "th_cruntin_11.webp",
+"w": 712,
+"h": 712,
+"url": "https://cruntin.com/product/%ED%81%AC%EB%9F%B0%ED%8B%B4-%ED%81%AC%EB%9F%B0%EC%B9%98%EB%B3%BC-%EB%8B%A8%EB%B0%B1%EC%A7%88%EC%89%90%EC%9D%B4%ED%81%AC-%EC%B5%9C%EB%8C%80-51/11/category/59/display/1/",
+"archived": "2026-11-25"
+},
+{
+"id": "youngranu_503",
+"brand": "영라뉴 (YOUNGRANU)",
+"title": "장용성 파비플로라 PRO · 블프",
+"tags": [
+"식품",
+"블랙프라이데이"
+],
+"src": "th_youngranu_503.webp",
+"w": 712,
+"h": 949,
+"url": "https://youngranu.co.kr/product/detail.html?product_no=503&cate_no=1&display_group=4",
+"archived": "2026-11-25"
+},
+{
+"id": "seorimax_9",
+"brand": "서리맥스 (SEORIMAX)",
+"title": "129발효서리태",
+"tags": [
+"식품"
+],
+"src": "th_seorimax_9.webp",
+"w": 712,
+"h": 712,
+"url": "https://seorimax.co.kr/product/%EA%B3%B5%EC%8B%9D-%EC%84%9C%EB%A6%AC%EB%A7%A5%EC%8A%A4-129%EB%B0%9C%ED%9A%A8%EC%84%9C%EB%A6%AC%ED%83%9C-1%EB%B0%95%EC%8A%A4-500mg-60%EC%A0%95/9/category/1/display/2/",
+"archived": "2026-11-25"
+},
+{
+"id": "arucheum_74",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "양베진 MAX · 최저가 비밀링크",
+"tags": [
+"식품",
+"비밀링크"
+],
+"src": "th_arucheum_74.webp",
+"w": 712,
+"h": 712,
+"url": "https://arucheum.co.kr/product/detail.html?product_no=74&cate_no=55&display_group=1",
+"archived": "2026-11-25"
+},
+{
+"id": "littlepearly_125",
+"brand": "리틀펄리 (LITTLE PEARLY)",
+"title": "자일리톨 락토 캔디 · 블프",
+"tags": [
+"식품",
+"블랙프라이데이"
+],
+"src": "th_littlepearly_125.webp",
+"w": 712,
+"h": 713,
+"url": "https://littlepearly.com/18/?idx=125",
+"archived": "2026-11-25"
+},
+{
+"id": "dentios_51",
+"brand": "덴티오스 (DENTIOS)",
+"title": "덴티오클린 구강유산균",
+"tags": [
+"식품"
+],
+"src": "th_dentios_51.webp",
+"w": 712,
+"h": 712,
+"url": "https://dentios.co.kr/product/1/51",
+"archived": "2026-11-25"
+},
+{
+"id": "antical_30",
+"brand": "안티칼 (Antical)",
+"title": "알파 에이징핏 톤업워터",
+"tags": [
+"식품"
+],
+"src": "th_antical_30.webp",
+"w": 712,
+"h": 712,
+"url": "https://antical.co.kr/product/%EC%95%88%ED%8B%B0%EC%B9%BC-%EC%95%8C%ED%8C%8C-%EC%97%90%EC%9D%B4%EC%A7%95%ED%95%8F-%ED%86%A4%EC%97%85%EC%9B%8C%ED%84%B0-aging-fit/30/",
+"archived": "2026-11-25"
+},
+{
+"id": "jabotiba_20",
+"brand": "자보티바 (JABOTIBA)",
+"title": "자보부스터",
+"tags": [
+"식품"
+],
+"src": "th_jabotiba_20.webp",
+"w": 712,
+"h": 712,
+"url": "https://jabotiba.co.kr/product/%EC%9E%90%EB%B3%B4%EB%B6%80%EC%8A%A4%ED%84%B0-jabo-booster/20/category/1/display/2/",
+"archived": "2026-11-25"
+},
+{
+"id": "celoraby_94",
+"brand": "셀로라바이 (CELORABY)",
+"title": "포텐션 펜타샷",
+"tags": [
+"기타"
+],
+"src": "th_celoraby_94.webp",
+"w": 712,
+"h": 712,
+"url": "https://celoraby.com/product/%EC%8A%A4%ED%82%A8%EC%98%A4%ED%94%84%EB%84%88-%ED%8F%AC%ED%85%90%EC%85%98-%ED%8E%9C%ED%83%80%EC%83%B7/94/",
+"archived": "2026-11-25"
+},
+{
+"id": "outcoma_12",
+"brand": "아웃코마 (outcoma)",
+"title": "디오스톡 DHR 컴플렉스",
+"tags": [
+"식품"
+],
+"src": "th_outcoma_12.webp",
+"w": 712,
+"h": 712,
+"url": "https://outcoma.com/product/%EB%94%94%EC%98%A4%EC%8A%A4%ED%86%A1-dhr-complex-premium-formula/12/category/24/display/1/",
+"archived": "2026-11-25"
+},
+{
+"id": "soltice_89",
+"brand": "솔티스 (Soltice)",
+"title": "혈관 클리어 세트 · 블프",
+"tags": [
+"식품",
+"블랙프라이데이"
+],
+"src": "th_soltice_89.webp",
+"w": 712,
+"h": 961,
+"url": "https://soltice.kr/surl/P/89",
+"archived": "2026-11-25"
+},
+{
+"id": "vwell_11",
+"brand": "브이웰 (VWELL)",
+"title": "브로멜라인 60정",
+"tags": [
+"식품"
+],
+"src": "th_vwell_11.webp",
+"w": 712,
+"h": 712,
+"url": "https://vwell.kr/product/vwell-%EB%B8%8C%EC%9D%B4%EC%9B%B0-%EB%B8%8C%EB%A1%9C%EB%A9%9C%EB%9D%BC%EC%9D%B8-60%EC%A0%95/11/",
+"archived": "2026-11-25"
+},
+{
+"id": "silimazen_29",
+"brand": "시리마젠 (Silimazen)",
+"title": "액체 밀크씨슬",
+"tags": [
+"식품"
+],
+"src": "th_silimazen_29.webp",
+"w": 712,
+"h": 712,
+"url": "https://silimazen.com/product/3%EA%B0%9C%EC%9B%94-%EB%B6%84-%EC%8B%9C%EB%A6%AC%EB%A7%88%EC%A0%A0-%EC%95%A1%EC%B2%B4-%EB%B0%80%ED%81%AC%EC%94%A8%EC%8A%AC-%EC%8B%A4%EB%A6%AC%EB%A7%88%EB%85%B8%EC%9D%B4%EB%93%9C-%EB%B3%B5%ED%95%A9-%EC%84%B1%EB%B6%84-%EC%8B%A4%EB%A6%AC%EB%A7%88%EC%A0%A0/29/",
+"archived": "2026-11-25"
+},
+{
+"id": "zuki_ssg",
+"brand": "주키 (zooki)",
+"title": "리포조말 콜라겐 5000mg",
+"tags": [
+"식품"
+],
+"src": "th_zuki_ssg.webp",
+"w": 712,
+"h": 712,
+"url": "https://www.ssg.com/item/itemView.ssg?itemId=1000602689186",
+"archived": "2026-11-25"
+},
+{
+"id": "epais_213",
+"brand": "에이페 (epais)",
+"title": "스칼프 부스팅 앰플 EX / 릴리프 · 블프",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_epais_213.webp",
+"w": 712,
+"h": 712,
+"url": "https://www.epais.kr/product/detail.html?product_no=213",
+"archived": "2026-11-25"
+},
+{
+"id": "rawdive_26",
+"brand": "로다이브 (RAWDIVE)",
+"title": "유산균 64+ 장벽 크림 · 블프",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_rawdive_26.webp",
+"w": 712,
+"h": 712,
+"url": "https://rawdive.shop/product/detail.html?product_no=26",
+"archived": "2026-11-25"
+},
+{
+"id": "meditherapy_2059",
+"brand": "메디테라피 (MEDITHERAPY)",
+"title": "흔적 리페어 루틴 · 블프",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_meditherapy_2059.webp",
+"w": 712,
+"h": 712,
+"url": "https://meditherapy.co.kr/product/detail.html?product_no=2059&cate_no=158&display_group=1",
+"archived": "2026-11-25"
+},
+{
+"id": "gyeolhaus_53",
+"brand": "결 하우스 (GYEOL HAUS)",
+"title": "올리브 앤 레몬 글로우 하이드로겔 마스크",
+"tags": [
+"뷰티"
+],
+"src": "th_gyeolhaus_53.webp",
+"w": 712,
+"h": 712,
+"url": "https://gyeolhaus.co.kr/product/%EC%9D%B4%EB%8B%AC%EC%9D%98pick3%EB%A7%A4-%EA%B2%B0-%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%98%AC%EB%A6%AC%EB%B8%8C-%EC%95%A4-%EB%A0%88%EB%AA%AC-%EA%B8%80%EB%A1%9C%EC%9A%B0-%ED%95%98%EC%9D%B4%EB%93%9C%EB%A1%9C%EA%B2%94-%EB%A7%88%EC%8A%A4%ED%81%AC/53/",
+"archived": "2026-11-25"
+},
+{
+"id": "medicube_2491",
+"brand": "메디큐브 (medicube)",
+"title": "광심이팩 콜라겐 우유 랩핑 마스크",
+"tags": [
+"뷰티"
+],
+"src": "th_medicube_2491.webp",
+"w": 712,
+"h": 759,
+"url": "https://themedicube.co.kr/product/%EA%B4%91%EC%8B%AC%EC%9D%B4%ED%8C%A9-%EC%BD%9C%EB%9D%BC%EA%B2%90-%EC%9A%B0%EC%9C%A0-%EB%9E%A9%ED%95%91-%EB%A7%88%EC%8A%A4%ED%81%AC/2491/",
+"archived": "2026-11-25"
+},
+{
+"id": "essl_108",
+"brand": "에슬 (essl)",
+"title": "센텔라 포어리스 패치",
+"tags": [
+"뷰티"
+],
+"src": "th_essl_108.webp",
+"w": 712,
+"h": 712,
+"url": "https://essl.kr/product/detail.html?product_no=108&cate_no=54&display_group=1",
+"archived": "2026-11-25"
+},
+{
+"id": "oable_78",
+"brand": "오어블 (Oable)",
+"title": "포어 매트릭스 바이오 셀룰로오스 마스크 팩 · 블프",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_oable_78.webp",
+"w": 712,
+"h": 712,
+"url": "https://oable.kr/product/%ED%8F%AC%EC%96%B4-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EB%B0%94%EC%9D%B4%EC%98%A4-%EC%85%80%EB%A3%B0%EB%A1%9C%EC%98%A4%EC%8A%A4-%EB%A7%88%EC%8A%A4%ED%81%AC-%ED%8C%A9/78/category/1/display/3/",
+"archived": "2026-11-25"
+},
+{
+"id": "sonatural_2172586",
+"brand": "쏘내추럴 (so natural)",
+"title": "마이크로 낫 세범 타겟 필름 마스크",
+"tags": [
+"뷰티"
+],
+"src": "th_sonatural_2172586.webp",
+"w": 712,
+"h": 712,
+"url": "https://www.sonatural.co.kr/shop/shopdetail.html?branduid=2172586",
+"archived": "2026-11-25"
+},
+{
+"id": "nightsaren_15",
+"brand": "나잇사렌 (NIGHT SAREN)",
+"title": "퍼플 정 (1단계)",
+"tags": [
+"식품"
+],
+"src": "th_nightsaren_15.webp",
+"w": 712,
+"h": 712,
+"url": "https://nightsaren.com/product/1%EB%8B%A8%EA%B3%84-%EB%82%98%EC%9E%87%EC%82%AC%EB%A0%8C-%ED%8D%BC%ED%94%8C/15/category/28/display/1/",
+"archived": "2026-11-25"
+},
+{
+"id": "solcut_34",
+"brand": "솔컷 (SOL-CUT)",
+"title": "비오리젠 솔커트 솔잎응축액 20포",
+"tags": [
+"식품"
+],
+"src": "th_solcut_34.webp",
+"w": 712,
+"h": 712,
+"url": "https://solcut.co.kr/product/%EB%B9%84%EC%98%A4%EB%A6%AC%EC%A0%A0-%EC%86%94%EC%BB%A4%ED%8A%B8-20%ED%8F%AC/34/category/1/display/2/",
+"archived": "2026-11-25"
+},
+{
+"id": "frommedi_129",
+"brand": "프롬메디 (frommedi)",
+"title": "아줄렌 EGF 긴급진정 크림 · 블프 특가",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_frommedi_129.webp",
+"w": 712,
+"h": 712,
+"url": "https://frommedi.co.kr/product/detail.html?product_no=129&cate_no=1&display_group=2",
+"archived": "2026-11-25"
+},
+{
+"id": "medicube_1717",
+"brand": "메디큐브 (medicube)",
+"title": "PDRN 핑크 펩타이드 앰플 · 블프",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_medicube_1717.webp",
+"w": 712,
+"h": 759,
+"url": "https://themedicube.co.kr/product/detail.html?product_no=1717",
+"archived": "2026-11-25"
+},
+{
+"id": "klarherz_16",
+"brand": "클라헤르츠 (Klarherz)",
+"title": "옵틱3 · 한정수량 비밀링크",
+"tags": [
+"비밀링크"
+],
+"src": "th_klarherz_16.webp",
+"w": 712,
+"h": 712,
+"url": "https://klarherz.com/product/detail.html?product_no=16",
+"archived": "2026-11-25"
+},
+{
+"id": "celladix_90",
+"brand": "셀라딕스 (Celladix)",
+"title": "트리플 레티놀 워시 필 · 블프 66%",
+"tags": [
+"블랙프라이데이"
+],
+"src": "th_celladix_90.webp",
+"w": 712,
+"h": 850,
+"url": "https://celladix.co.kr/product/detail.html?product_no=90&cate_no=1&display_group=2",
+"archived": "2026-11-23"
+},
+{
+"id": "celladix_219",
+"brand": "셀라딕스 (Celladix)",
+"title": "올데이 트러블 세트 · 1+1 특가",
+"tags": [
+"블랙프라이데이"
+],
+"src": "th_celladix_219.webp",
+"w": 712,
+"h": 850,
+"url": "https://celladix.co.kr/product/detail.html?product_no=219&cate_no=1&display_group=2",
+"archived": "2026-11-23"
+},
+{
+"id": "foodology_2711",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "전소미 3주 식단 세트 · 런칭 56%",
+"tags": [
+"식품"
+],
+"src": "th_foodology_2711.webp",
+"w": 800,
+"h": 800,
+"url": "https://food-ology.co.kr/product/detail.html?product_no=2711&cate_no=74&display_group=1",
+"archived": "2026-11-23"
+},
+{
+"id": "p_hestel",
+"brand": "헤스텔 (hestel)",
+"title": "3세대 브러시형 헤어세럼픽서 · 한지혜 PICK",
+"tags": [
+"뷰티"
+],
+"src": "th_p_hestel.webp",
+"w": 750,
+"h": 750,
+"url": "https://hestel.net/product/detail.html?product_no=13&cate_no=42&display_group=1",
+"archived": "2026-11-23"
+},
+{
+"id": "p_eiom",
+"brand": "이옴 (EIOM)",
+"title": "트러블 바이옴 클리어링 세럼",
+"tags": [
+"뷰티"
+],
+"src": "th_p_eiom.webp",
+"w": 800,
+"h": 800,
+"url": "https://eiom.co.kr/surl/P/188",
+"archived": "2026-11-23"
+},
+{
+"id": "p_celladix_mask",
+"brand": "셀라딕스 (Celladix)",
+"title": "바이오 포어 케어 셀룰로오스 마스크",
+"tags": [
+"뷰티"
+],
+"src": "th_p_celladix_mask.webp",
+"w": 800,
+"h": 955,
+"url": "https://celladix.co.kr/product/detail.html?product_no=169&cate_no=24&display_group=1",
+"archived": "2026-11-23"
+},
+{
+"id": "p_celladix_ampoule",
+"brand": "셀라딕스 (Celladix)",
+"title": "세범 밸런싱 131 앰플",
+"tags": [
+"뷰티"
+],
+"src": "th_p_celladix_ampoule.webp",
+"w": 800,
+"h": 955,
+"url": "https://celladix.co.kr/product/detail.html?product_no=10&cate_no=24&display_group=1",
+"archived": "2026-11-23"
+},
+{
+"id": "p_toun28_booster",
+"brand": "톤28 (TOUN28)",
+"title": "블루 펩타이드 시카 스킨 부스터",
+"tags": [
+"뷰티"
+],
+"src": "th_p_toun28_booster.webp",
+"w": 800,
+"h": 960,
+"url": "https://www.toun28.com/renew/product/1895",
+"archived": "2026-11-23"
+},
+{
+"id": "p_toun28_serum",
+"brand": "톤28 (TOUN28)",
+"title": "블루 펩타이드 고체 세럼",
+"tags": [
+"뷰티"
+],
+"src": "th_p_toun28_serum.webp",
+"w": 800,
+"h": 960,
+"url": "https://www.toun28.com/renew/product/2096",
+"archived": "2026-11-23"
+},
+{
+"id": "p_veroza_ruby",
+"brand": "베로자 (VEROZA)",
+"title": "멜라틴 루비샷 화이트트러플 PDRN",
+"tags": [
+"뷰티"
+],
+"src": "th_p_veroza_ruby.webp",
+"w": 800,
+"h": 800,
+"url": "https://veroza.kr/product/%EB%B2%A0%EB%A1%9C%EC%9E%90-%EB%A9%9C%EB%9D%BC%ED%8B%B4-%EB%A3%A8%EB%B9%84%EC%83%B7-%ED%99%94%EC%9D%B4%ED%8A%B8%ED%8A%B8%EB%9F%AC%ED%94%8Cpdrn/13/category/24/display/1/",
+"archived": "2026-11-23"
+},
+{
+"id": "p_veroza_lip",
+"brand": "베로자 (VEROZA)",
+"title": "듀얼립 24시간 밀착 볼륨틴트",
+"tags": [
+"뷰티"
+],
+"src": "th_p_veroza_lip.webp",
+"w": 800,
+"h": 800,
+"url": "https://veroza.kr/product/%EB%B2%A0%EB%A1%9C%EC%9E%90-%EB%93%80%EC%96%BC%EB%A6%BD-24%EC%8B%9C%EA%B0%84-%EB%B0%80%EC%B0%A9-%EB%B3%BC%EB%A5%A8%ED%8B%B4%ED%8A%B8/15/category/24/display/1/",
+"archived": "2026-11-23"
+},
+{
+"id": "p_wiseron",
+"brand": "위세론 (Wiseron)",
+"title": "헬리코부스터 · 한정 혜택 50%",
+"tags": [
+"비밀링크"
+],
+"src": "th_p_wiseron.webp",
+"w": 700,
+"h": 700,
+"url": "https://wiseron.co.kr/surl/p/18",
+"archived": "2026-11-23"
+},
+{
+"id": "p_tigermorning",
+"brand": "타이거모닝",
+"title": "진저샷 오리지널 보틀",
+"tags": [
+"식품"
+],
+"src": "th_p_tigermorning.webp",
+"w": 700,
+"h": 850,
+"url": "https://tiger-morning.com/product/%ED%83%80%EC%9D%B4%EA%B1%B0%EB%AA%A8%EB%8B%9D-%EC%A7%84%EC%A0%80%EC%83%B7-%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90-%EB%B3%B4%ED%8B%80/25/category/1/display/2/",
+"archived": "2026-11-23"
+},
+{
+"id": "p_lemonery",
+"brand": "레모너리",
+"title": "고체레몬즙 트리플",
+"tags": [
+"식품"
+],
+"src": "th_p_lemonery.webp",
+"w": 800,
+"h": 800,
+"url": "https://lemonery.co.kr/product/%EA%B3%B5%EC%8B%9D-%EA%B3%A0%EC%B2%B4%EB%A0%88%EB%AA%AC%EC%A6%99-%EB%A0%88%EB%AA%A8%EB%84%88%EB%A6%AC-1%EB%B0%95%EC%8A%A4-%ED%8A%B8%EB%A6%AC%ED%94%8C-600mg-x-60%EC%A0%95/27/category/1/display/2/",
+"archived": "2026-11-23"
+},
+{
+"id": "p_periderm",
+"brand": "페리덤",
+"title": "덴토락 구강유산균 껌 · 블프 최대 57%",
+"tags": [
+"블랙프라이데이"
+],
+"src": "th_p_periderm.webp",
+"w": 700,
+"h": 700,
+"url": "https://periderm.co.kr/product/10%EC%9B%94-pick-%ED%8E%98%EB%A6%AC%EB%8D%A4-%EB%8D%B4%ED%86%A0%EB%9D%BD-%EA%B5%AC%EA%B0%95%EC%9C%A0%EC%82%B0%EA%B7%A0-%EA%BB%8C/11/category/1/display/2/",
+"archived": "2026-11-23"
+},
+{
+"id": "p_purexin",
+"brand": "퓨렉신",
+"title": "우로비콘 · 비밀 링크 특가 최대 36%",
+"tags": [
+"비밀링크"
+],
+"src": "th_p_purexin.webp",
+"w": 800,
+"h": 800,
+"url": "https://purexin.kr/product/detail.html?product_no=28",
+"archived": "2026-11-23"
+}
 ]
