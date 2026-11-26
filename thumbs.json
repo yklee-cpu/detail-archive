@@ -1,5 +1,18 @@
 [
  {
+  "id": "propermarket_427",
+  "brand": "프로퍼마켓 (PROPER MARKET)",
+  "title": "매마샐 매일 마시는 샐러드",
+  "tags": [
+   "식품"
+  ],
+  "src": "th_propermarket_427.webp",
+  "w": 712,
+  "h": 712,
+  "url": "https://propermarket.co.kr/goods/goods_view.php?goodsNo=1000000427",
+  "archived": "2026-11-26"
+ },
+ {
   "id": "jamiet_59",
   "brand": "재미어트 (jamiet)",
   "title": "가정용 스파인코렉터 바로폼",
