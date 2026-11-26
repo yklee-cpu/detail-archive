@@ -830,5 +830,162 @@
 "h": 800,
 "url": "https://purexin.kr/product/detail.html?product_no=28",
 "archived": "2026-11-23"
+},
+{
+"id": "saekdong_cream",
+"brand": "색동 (Saekdong)",
+"title": "코직산 멜라 토닝 크림",
+"tags": [
+"뷰티"
+],
+"src": "th_saekdong_cream.webp",
+"w": 712,
+"h": 876,
+"url": "https://saekdong.com/product/new-%EC%BD%94%EC%A7%81%EC%82%B0-%ED%86%A0%EB%8B%9D-%ED%81%AC%EB%A6%BC/43/category/1/display/2/",
+"archived": "2026-11-23"
+},
+{
+"id": "saekdong_toner",
+"brand": "색동 (Saekdong)",
+"title": "코직산 밀키토너",
+"tags": [
+"뷰티"
+],
+"src": "th_saekdong_toner.webp",
+"w": 712,
+"h": 876,
+"url": "https://saekdong.com/product/%EC%BD%94%EC%A7%81%EC%82%B0-%EB%B0%80%ED%82%A4%ED%86%A0%EB%84%88/36/category/1/display/2/",
+"archived": "2026-11-23"
+},
+{
+"id": "spoteasy",
+"brand": "스팟이지 (SPOTEASY)",
+"title": "스팟멜트크림",
+"tags": [
+"뷰티"
+],
+"src": "th_spoteasy.webp",
+"w": 712,
+"h": 712,
+"url": "https://spoteasy.kr/product/detail.html?product_no=39&cate_no=1&display_group=2",
+"archived": "2026-11-23"
+},
+{
+"id": "dermela",
+"brand": "더멜라 (Dermela)",
+"title": "PDRN샷 1000 모공앰플",
+"tags": [
+"뷰티"
+],
+"src": "th_dermela.webp",
+"w": 712,
+"h": 712,
+"url": "https://dermela.co.kr/product/detail.html?product_no=389",
+"archived": "2026-11-24"
+},
+{
+"id": "earlift",
+"brand": "이어리프트 (EARLIFT)",
+"title": "리프트 부스트 패치",
+"tags": [
+"뷰티"
+],
+"src": "th_earlift.webp",
+"w": 712,
+"h": 712,
+"url": "https://earlift.co.kr/product/detail.html?product_no=21",
+"archived": "2026-11-24"
+},
+{
+"id": "ohir",
+"brand": "오히어 (OHIR)",
+"title": "흰동백 기미크림 (화이트 카멜리아 글루타치온 코어 크림)",
+"tags": [
+"뷰티"
+],
+"src": "th_ohir.webp",
+"w": 712,
+"h": 712,
+"url": "https://theohir.com/product/detail.html?product_no=35",
+"archived": "2026-11-24"
+},
+{
+"id": "melable",
+"brand": "메라블 (melable)",
+"title": "루비알엔 피코샷 크림",
+"tags": [
+"뷰티"
+],
+"src": "th_melable.webp",
+"w": 712,
+"h": 712,
+"url": "https://melable.co.kr/product/detail.html?product_no=52",
+"archived": "2026-11-24"
+},
+{
+"id": "medioxyl",
+"brand": "메디옥실 (Medioxyl)",
+"title": "레드스팟 21.7% 아크앰플",
+"tags": [
+"뷰티"
+],
+"src": "th_medioxyl.webp",
+"w": 712,
+"h": 712,
+"url": "https://medioxyl.com/product/detail.html?product_no=52",
+"archived": "2026-11-24"
+},
+{
+"id": "virenne",
+"brand": "비렌느 (VIRENNE)",
+"title": "스팟 엑스",
+"tags": [
+"뷰티",
+"블랙프라이데이"
+],
+"src": "th_virenne.webp",
+"w": 712,
+"h": 712,
+"url": "https://virenne.co.kr/product/detail.html?product_no=11",
+"archived": "2026-11-24"
+},
+{
+"id": "pcalm_clearpro",
+"brand": "피캄 (P.CALM)",
+"title": "클리어프로 (모공 플라즈마 디바이스)",
+"tags": [
+"뷰티"
+],
+"src": "th_pcalm_clearpro.webp",
+"w": 712,
+"h": 712,
+"url": "https://pcalm.co.kr/product/detail.html?product_no=1103",
+"archived": "2026-11-24"
+},
+{
+"id": "pcalm_ampoule",
+"brand": "피캄 (P.CALM)",
+"title": "레티놀라겐 모공탄력 앰플",
+"tags": [
+"뷰티"
+],
+"src": "th_pcalm_ampoule.webp",
+"w": 712,
+"h": 712,
+"url": "https://pcalm.co.kr/product/detail.html?product_no=337",
+"archived": "2026-11-24"
+},
+{
+"id": "droracle",
+"brand": "닥터오라클 (Dr.Oracle)",
+"title": "레티노타이트닝 비타민A 레티놀 앰플",
+"tags": [
+"뷰티"
+],
+"src": "th_droracle.webp",
+"w": 712,
+"h": 712,
+"url": "https://droracle.co.kr/product/detail.html?product_no=661",
+"archived": "2026-11-24"
 }
 ]
