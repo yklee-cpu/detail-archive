@@ -1,268 +1,2995 @@
 [
 {
-"id": "arucheum",
-"brand": "아르채움 (ARUCHEUM)",
-"title": "블랙프라이데이 메인 배너",
+"id": "antical_0",
+"brand": "안티칼 (Antical)",
+"title": "시너지 더블 CUT 필수관리 한번에 1+1 특가 진행중",
 "tags": [
-"블랙프라이데이"
+"제품 연출"
 ],
-"src": "bn_arucheum.webp",
+"src": "bn_antical_0.webp",
 "w": 1200,
-"h": 446,
-"url": "https://arucheum.co.kr/",
-"img": "https://arucheum.co.kr/web/upload/NNEditor/20261117/PC_1920x714_EC97B0EC9EA5.png",
+"h": 293,
+"url": "https://antical.co.kr/",
 "archived": "2026-11-26"
 },
 {
-"id": "bnatures",
-"brand": "비네이처스 (마디에데)",
-"title": "블랙프라이데이 메인 배너",
+"id": "antical_1",
+"brand": "안티칼 (Antical)",
+"title": "국내최초 톤업워터 7대 시너지 배합, 알파 에이징핏 에이징핏으로 톤업피부 관리하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_antical_1.webp",
+"w": 1066,
+"h": 365,
+"url": "https://antical.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "antical_2",
+"brand": "안티칼 (Antical)",
+"title": "국내최초 Alpha-Olamin™4550 안티칼 알파 맥스 초강력 2.5배 UPGRADE 구매하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_antical_2.webp",
+"w": 1066,
+"h": 365,
+"url": "https://antical.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "antical_3",
+"brand": "안티칼 (Antical)",
+"title": "지중해 검은보석 '블랙커민' 안티칼 제타 스파이크 제타 스파이크로 식후 관리하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_antical_3.webp",
+"w": 1066,
+"h": 365,
+"url": "https://antical.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "antical_4",
+"brand": "안티칼 (Antical)",
+"title": "전 세계가 주목한 제품 안티칼 알파, 알파올라민 알파올라민으로 탄수화물,지방 관리하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_antical_4.webp",
+"w": 1066,
+"h": 365,
+"url": "https://antical.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "antical_5",
+"brand": "안티칼 (Antical)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_antical_5.webp",
+"w": 1200,
+"h": 237,
+"url": "https://antical.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "archpin_0",
+"brand": "아치핀 (archpin)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_archpin_0.webp",
+"w": 1200,
+"h": 500,
+"url": "https://archpin.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "archpin_1",
+"brand": "아치핀 (archpin)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_archpin_1.webp",
+"w": 1200,
+"h": 500,
+"url": "https://archpin.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "archpin_2",
+"brand": "아치핀 (archpin)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_archpin_2.webp",
+"w": 1200,
+"h": 500,
+"url": "https://archpin.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_1",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "만병초라 불린 곰보배추, 맛있는 일상 건강관리의 시작! 근거있는 3중 포뮬러 무첨가 공식 제품 구경하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_arucheum_1.webp",
+"w": 1114,
+"h": 360,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_2",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_bnatures.webp",
+"src": "bn_arucheum_2.webp",
+"w": 1200,
+"h": 447,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_3",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "양배추즙 5포를 단 1포로 압축 맛있는 양배추&꾸지뽕 젤리스틱 압도적인 재구매율 1위 베스트셀러 국내유일 2",
+"tags": [
+"제품 연출"
+],
+"src": "bn_arucheum_3.webp",
+"w": 1114,
+"h": 425,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_4",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "지중해 저속루틴, 올리몬샷 젤리 국내최초 제형개발 성공 스페인 엑스트라버진 피쿠알 원물선별 제품 구경하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_arucheum_4.webp",
+"w": 1114,
+"h": 425,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_5",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_arucheum_5.webp",
+"w": 1200,
+"h": 495,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "arucheum_6",
+"brand": "아르채움 (ARUCHEUM)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_arucheum_6.webp",
+"w": 1200,
+"h": 495,
+"url": "https://arucheum.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_0",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_bnatures_0.webp",
 "w": 1200,
 "h": 350,
 "url": "https://bnatures.co.kr/",
-"img": "https://bnatures.co.kr/web/upload/goodymall/kr/main/main_img01_bp.jpg",
 "archived": "2026-11-26"
 },
 {
-"id": "celladix",
-"brand": "셀라딕스 (Celladix)",
-"title": "블랙프라이데이 메인 배너",
+"id": "bnatures_2",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_celladix.webp",
+"src": "bn_bnatures_2.webp",
+"w": 1200,
+"h": 351,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_3",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_bnatures_3.webp",
+"w": 1200,
+"h": 350,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_4",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_bnatures_4.webp",
+"w": 1200,
+"h": 350,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_5",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_bnatures_5.webp",
+"w": 1200,
+"h": 350,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_6",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_bnatures_6.webp",
+"w": 1200,
+"h": 350,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "bnatures_7",
+"brand": "비네이처스 (마디에데)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_bnatures_7.webp",
+"w": 1200,
+"h": 350,
+"url": "https://bnatures.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "celladix_0",
+"brand": "셀라딕스 (Celladix)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_celladix_0.webp",
 "w": 1200,
 "h": 700,
 "url": "https://celladix.co.kr/",
-"img": "https://celladix.co.kr/web/img/promotion/261020/main_prm_261020_PC.webp",
 "archived": "2026-11-26"
 },
 {
-"id": "eiom",
-"brand": "이옴 (EIOM)",
-"title": "블랙프라이데이 메인 배너",
+"id": "celladix_1",
+"brand": "셀라딕스 (Celladix)",
+"title": "Trouble 131 Line 문제성 피부를 개선해주는 셀라딕스만의 트러블 개선 시스템 View More 트",
 "tags": [
-"블랙프라이데이"
+"모델"
 ],
-"src": "bn_eiom.webp",
+"src": "bn_celladix_1.webp",
+"w": 1120,
+"h": 457,
+"url": "https://celladix.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "celladix_2",
+"brand": "셀라딕스 (Celladix)",
+"title": "Hyaluronic Intense Line 초고분자 히알루론산에 침투 기술을 더한 신개념 보습케어 View ",
+"tags": [
+"모델"
+],
+"src": "bn_celladix_2.webp",
+"w": 1120,
+"h": 457,
+"url": "https://celladix.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "celladix_3",
+"brand": "셀라딕스 (Celladix)",
+"title": "Triple Retinol Line 자극은 낮추고 효능은 3배로, 피부결부터 모공흔적까지 올인원 집중 케어 ",
+"tags": [
+"모델"
+],
+"src": "bn_celladix_3.webp",
+"w": 1120,
+"h": 457,
+"url": "https://celladix.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_0",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_0.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_1",
+"brand": "셀로라바이 (CELORABY)",
+"title": "속부터 탄탄히, 전문관리급 탄력 코어 솔루션 리투겔 이씨엠 엑스 코어 앰플 ECM-5 ㅣ 탄력 코어 ㅣ 주름",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_1.webp",
+"w": 1114,
+"h": 475,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_2",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_2.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_3",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_3.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_4",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_4.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_5",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_5.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_6",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_6.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_7",
+"brand": "셀로라바이 (CELORABY)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_7.webp",
+"w": 1200,
+"h": 406,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "celoraby_8",
+"brand": "셀로라바이 (CELORABY)",
+"title": "Clinical Technology for Homecare 피부 상태와 라이프스타일에 맞춘 퍼스널 맞춤형 케",
+"tags": [
+"제품 연출"
+],
+"src": "bn_celoraby_8.webp",
+"w": 1200,
+"h": 800,
+"url": "https://celoraby.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "cepolab_0",
+"brand": "세포랩 (cepoLAB)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_cepolab_0.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "cepolab_1",
+"brand": "세포랩 (cepoLAB)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_cepolab_1.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_0",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_dentios_0.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_1",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출",
+"라이프스타일"
+],
+"src": "bn_dentios_1.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_2",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_2.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_3",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_3.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_4",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_4.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_5",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_5.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_6",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_6.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_7",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_7.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dentios_8",
+"brand": "덴티오스 (DENTIOS)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dentios_8.webp",
+"w": 1200,
+"h": 406,
+"url": "https://dentios.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "dermela_2",
+"brand": "더멜라 (Dermela)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dermela_2.webp",
+"w": 1200,
+"h": 381,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "dermela_3",
+"brand": "더멜라 (Dermela)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_dermela_3.webp",
+"w": 1200,
+"h": 381,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_0",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_0.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_1",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_1.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_2",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_2.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_3",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_3.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_4",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_4.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_5",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_5.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "drdifferent_6",
+"brand": "닥터디퍼런트 (DR.DIFFERENT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_drdifferent_6.webp",
+"w": 1200,
+"h": 450,
+"url": "https://drdifferent.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "duskrack_0",
+"brand": "더스크랙 (DUSK RACK)",
+"title": "BACKSTAGE FOR YOU We aim for unparalleled quality in our res",
+"tags": [
+"모델"
+],
+"src": "bn_duskrack_0.webp",
+"w": 1200,
+"h": 625,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "duskrack_1",
+"brand": "더스크랙 (DUSK RACK)",
+"title": "BACKSTAGE FOR YOU We aim for unparalleled quality in our res",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_duskrack_1.webp",
+"w": 1200,
+"h": 625,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "duskrack_2",
+"brand": "더스크랙 (DUSK RACK)",
+"title": "BACKSTAGE FOR YOU We aim for unparalleled quality in our res",
+"tags": [
+"모델"
+],
+"src": "bn_duskrack_2.webp",
+"w": 1200,
+"h": 625,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "duskrack_3",
+"brand": "더스크랙 (DUSK RACK)",
+"title": "BACKSTAGE FOR YOU We aim for unparalleled quality in our res",
+"tags": [
+"제품 연출"
+],
+"src": "bn_duskrack_3.webp",
+"w": 1200,
+"h": 625,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "duskrack_4",
+"brand": "더스크랙 (DUSK RACK)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_duskrack_4.webp",
+"w": 1200,
+"h": 625,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "earlift_2",
+"brand": "이어리프트 (EARLIFT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_earlift_2.webp",
+"w": 1200,
+"h": 601,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "earlift_3",
+"brand": "이어리프트 (EARLIFT)",
+"title": "The Science of EARLIFT 얼굴의 흐름을 과학으로 바로잡습니다. 브랜드 스토리",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_earlift_3.webp",
+"w": 1200,
+"h": 675,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_0",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_eiom_0.webp",
+"w": 1200,
+"h": 673,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_1",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_eiom_1.webp",
+"w": 1200,
+"h": 673,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_2",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"혜택·이벤트"
+],
+"src": "bn_eiom_2.webp",
 "w": 1200,
 "h": 672,
 "url": "https://eiom.co.kr/",
-"img": "https://eiom.co.kr/web/upload/appfiles/AIFBrluHGdhkEsW6ewuLoA/8ad6b124785ea3029f35f60ecb5b6bc8.webp",
 "archived": "2026-11-26"
 },
 {
-"id": "foodology",
-"brand": "푸드올로지 (FOODOLOGY)",
-"title": "블랙프라이데이 메인 배너",
+"id": "eiom_3",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
 "tags": [
-"블랙프라이데이"
+"블랙프라이데이",
+"모델"
 ],
-"src": "bn_foodology.webp",
+"src": "bn_eiom_3.webp",
 "w": 1200,
-"h": 438,
-"url": "https://food-ology.co.kr/",
-"img": "https://food-ology.co.kr/img/pc/main/261102/bnr_main_pc_01.jpg",
+"h": 672,
+"url": "https://eiom.co.kr/",
 "archived": "2026-11-26"
 },
 {
-"id": "frommedi",
-"brand": "프롬메디 (frommedi)",
-"title": "블랙프라이데이 메인 배너",
+"id": "eiom_4",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_eiom_4.webp",
+"w": 1200,
+"h": 672,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_5",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출",
+"혜택·이벤트"
+],
+"src": "bn_eiom_5.webp",
+"w": 1200,
+"h": 673,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_6",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_eiom_6.webp",
+"w": 1200,
+"h": 672,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_7",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_eiom_7.webp",
+"w": 1200,
+"h": 673,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "eiom_8",
+"brand": "이옴 (EIOM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_eiom_8.webp",
+"w": 1200,
+"h": 673,
+"url": "https://eiom.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "essl_0",
+"brand": "에슬 (essl)",
+"title": "essl light 집요함으로 완성된 바디 솔루션",
+"tags": [
+"모델"
+],
+"src": "bn_essl_0.webp",
+"w": 1200,
+"h": 591,
+"url": "https://essl.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_1",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_fatlab_1.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_2",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_fatlab_2.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_3",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_fatlab_3.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_4",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_fatlab_4.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_5",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_fatlab_5.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_6",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_fatlab_6.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_7",
+"brand": "팻랩 (FAT LAB)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_fatlab_7.webp",
+"w": 1200,
+"h": 562,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "fatlab_8",
+"brand": "팻랩 (FAT LAB)",
+"title": "Wake Up Skinny 새로운 방식의 바디 케어 다이어트의 시작은 순환에서 시작됩니다. View deta",
+"tags": [
+"제품 연출"
+],
+"src": "bn_fatlab_8.webp",
+"w": 1200,
+"h": 800,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_0",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_frommedi.webp",
+"src": "bn_food-ology_0.webp",
+"w": 1200,
+"h": 488,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_2",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "MINDFUL 강민경 PICK 지중해식 웰니스 루틴 건강한 라인의 시작 #마시는 파이버맥싱 #오일만 클렌즈",
+"tags": [
+"모델"
+],
+"src": "bn_food-ology_2.webp",
+"w": 1176,
+"h": 479,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_3",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "빨간 캡슐 다이어트 체지방 잡는 유산균 체지방 감소와 유산균 증식을 동시에! 다이어트 유산균 #콜레올로지 컷",
+"tags": [
+"모델"
+],
+"src": "bn_food-ology_3.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_4",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "48시간 공복 루틴 ABC 클렌즈 쏙 비우는 가벼운 클렌즈 공식 톡스올로지 클렌즈 48 #묵직함 없이 가볍게",
+"tags": [
+"제품 연출"
+],
+"src": "bn_food-ology_4.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_5",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "★한정수량★ 61% 할인 다이어트 BEST 1+1 특가 재고 소진 시 이벤트 종료! *콜레올로지컷 PRO, ",
+"tags": [
+"블랙프라이데이",
+"모델"
+],
+"src": "bn_food-ology_5.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_6",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "중년 건강 다이어트 신봉선 PICK 중년의 다이어트는 달라야한다! 중년 건강 다이어트 #버닝올로지올인원 #콜",
+"tags": [
+"모델"
+],
+"src": "bn_food-ology_6.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_7",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "브랜드대상 5년 연속 수상 건강한 선택을 위한 3가지 기준 푸드올로지의 약속 01 최고 품질 건강기능식품 0",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_food-ology_7.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "food-ology_9",
+"brand": "푸드올로지 (FOODOLOGY)",
+"title": "좋은 일은 함께해요! 함께 만드는 더 좋은 세상 GIVE U 캠페인 푸드올로지의 나눔 문화 “Give U” ",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_food-ology_9.webp",
+"w": 941,
+"h": 383,
+"url": "https://food-ology.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "fractalofficial_1",
+"brand": "프랙탈 (fractal)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_fractalofficial_1.webp",
+"w": 1200,
+"h": 675,
+"url": "https://fractalofficial.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "frommedi_0",
+"brand": "프롬메디 (frommedi)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_frommedi_0.webp",
 "w": 1200,
 "h": 675,
 "url": "https://frommedi.co.kr/",
-"img": "https://frommedi.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/56ace760062b0bf3215120288b56f087.jpg",
 "archived": "2026-11-26"
 },
 {
-"id": "heimta",
+"id": "frommedi_1",
+"brand": "프롬메디 (frommedi)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이",
+"모델"
+],
+"src": "bn_frommedi_1.webp",
+"w": 1200,
+"h": 675,
+"url": "https://frommedi.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "frommedi_2",
+"brand": "프롬메디 (frommedi)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_frommedi_2.webp",
+"w": 1200,
+"h": 675,
+"url": "https://frommedi.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "frommedi_3",
+"brand": "프롬메디 (frommedi)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_frommedi_3.webp",
+"w": 1200,
+"h": 675,
+"url": "https://frommedi.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "frommedi_4",
+"brand": "프롬메디 (frommedi)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_frommedi_4.webp",
+"w": 1200,
+"h": 675,
+"url": "https://frommedi.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "heimta_0",
 "brand": "헤임타 (Heimta)",
-"title": "블랙프라이데이 메인 배너",
+"title": "메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_heimta.webp",
+"src": "bn_heimta_0.webp",
 "w": 1200,
 "h": 412,
-"url": "https://heimta.kr/",
-"img": "https://ecimg.cafe24img.com/pg720b74701941001/boardingpass12/web/upload/NNEditor/20261120/85d0419cc2b9081ffc00be62b17e1a01.jpg",
+"url": "https://ecimg.cafe24img.com/",
 "archived": "2026-11-26"
 },
 {
-"id": "mealit",
-"brand": "밀잇 (MEAL IT)",
-"title": "블랙프라이데이 메인 배너",
+"id": "heimta_1",
+"brand": "헤임타 (Heimta)",
+"title": "어깨와 손목 뭉친 부위에 강력하게 샷! 헤임타 EMS 이지샷 스팟 마사지기 간편한 목걸이형 / EMS 저주파",
 "tags": [
-"블랙프라이데이"
+"모델"
 ],
-"src": "bn_mealit.webp",
+"src": "bn_heimta_1.webp",
+"w": 1200,
+"h": 412,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "heimta_2",
+"brand": "헤임타 (Heimta)",
+"title": "무릎부터 종아리까지 ALL CORE RECOVERY 헤임타 리커버 프로 다리마사지기 EMS+TENS / 근적",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_heimta_2.webp",
+"w": 1200,
+"h": 412,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "heimta_3",
+"brand": "헤임타 (Heimta)",
+"title": "운동 후 회복을 위한 1초 착용! 데일리 아이싱 헤임타 리커버리 아이싱 젤 슬리브 간편하게 입는 슬리브 형태",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_heimta_3.webp",
+"w": 1200,
+"h": 412,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "heimta_4",
+"brand": "헤임타 (Heimta)",
+"title": "깊은 근육속까지 풀어주는 확실한 근막 리커버리 헤임타 마사지스틱 풀링바 부드러운 롤링 / 스틸코어의 묵직한 ",
+"tags": [
+"모델"
+],
+"src": "bn_heimta_4.webp",
+"w": 1200,
+"h": 412,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "hestel_1",
+"brand": "헤스텔 (hestel)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_hestel_1.webp",
+"w": 1200,
+"h": 675,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_0",
+"brand": "인버브 (inverb)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_inverb_0.webp",
+"w": 1200,
+"h": 568,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_1",
+"brand": "인버브 (inverb)",
+"title": "전신 어디든 개운하게 원적외선 근육관절 패치 순한 성분으로 강력한 케어 자세히 보기",
+"tags": [
+"모델"
+],
+"src": "bn_inverb_1.webp",
+"w": 1200,
+"h": 568,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_2",
+"brand": "인버브 (inverb)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_inverb_2.webp",
+"w": 1200,
+"h": 568,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_3",
+"brand": "인버브 (inverb)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_inverb_3.webp",
+"w": 1200,
+"h": 568,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_4",
+"brand": "인버브 (inverb)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_inverb_4.webp",
+"w": 1200,
+"h": 461,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_5",
+"brand": "인버브 (inverb)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_inverb_5.webp",
+"w": 1200,
+"h": 461,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_6",
+"brand": "인버브 (inverb)",
+"title": "인버브가 처음이라면?신규 회원가입 혜택",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_inverb_6.webp",
+"w": 1200,
+"h": 415,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "inverb_7",
+"brand": "인버브 (inverb)",
+"title": "Simply Better, Every Day 매일의 편안함을 더하는 선택 인버브와 함께 하세요 브랜드 스토리",
+"tags": [
+"제품 연출"
+],
+"src": "bn_inverb_7.webp",
+"w": 1200,
+"h": 789,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "jabotiba_1",
+"brand": "자보티바 (JABOTIBA)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_jabotiba_1.webp",
+"w": 1200,
+"h": 363,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "jabotiba_2",
+"brand": "자보티바 (JABOTIBA)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_jabotiba_2.webp",
+"w": 1200,
+"h": 363,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "jabotiba_3",
+"brand": "자보티바 (JABOTIBA)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_jabotiba_3.webp",
+"w": 1200,
+"h": 281,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "juvicut_0",
+"brand": "쥬비컷 (Juvicut)",
+"title": "내 몸에 딱 맞게 밀착되는 편안한 랩핑 관리법 쥬비컷만의 강력한 슬리밍 효과",
+"tags": [
+"모델"
+],
+"src": "bn_juvicut_0.webp",
+"w": 1200,
+"h": 464,
+"url": "https://juvicut.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "juvicut_1",
+"brand": "쥬비컷 (Juvicut)",
+"title": "간편하게 착! 쉽고 간편한 군살 관리 가장 쉬운 홈케어, 셀룰라이트 관리",
+"tags": [
+"모델"
+],
+"src": "bn_juvicut_1.webp",
+"w": 1200,
+"h": 464,
+"url": "https://juvicut.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "juvicut_2",
+"brand": "쥬비컷 (Juvicut)",
+"title": "피부에 닿는 모든 면이 핵심 성분, 슬리밍 랩핑 고르게 탄탄하게, 쥬비컷의 독보적 기술력",
+"tags": [
+"제품 연출"
+],
+"src": "bn_juvicut_2.webp",
+"w": 1200,
+"h": 464,
+"url": "https://juvicut.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "klarherz_0",
+"brand": "클라헤르츠 (Klarherz)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_klarherz_0.webp",
+"w": 1200,
+"h": 676,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_0",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_klenheim_0.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_1",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_1.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_2",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_2.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_3",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_3.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_4",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_4.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_5",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_5.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "klenheim_6",
+"brand": "클렌하임 (KLENHEIM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_klenheim_6.webp",
+"w": 1200,
+"h": 475,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "leaf-in_1",
+"brand": "리핀 (LEAFIN)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_leaf-in_1.webp",
+"w": 1200,
+"h": 537,
+"url": "https://leaf-in.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "leaf-in_2",
+"brand": "리핀 (LEAFIN)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_leaf-in_2.webp",
+"w": 1200,
+"h": 537,
+"url": "https://leaf-in.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "lemonery_0",
+"brand": "레모너리",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_lemonery_0.webp",
+"w": 1200,
+"h": 406,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "magnefitpatch_0",
+"brand": "류마픽스 (마그네핏)",
+"title": "73+손관절연구소, 마그네핏 손이 주는 일상의 기쁨 아침의 커피 한 잔부터 사람을 안아주는 순간까지 잡고, ",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_magnefitpatch_0.webp",
+"w": 1200,
+"h": 675,
+"url": "https://magnefitpatch.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_0",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_mealit_0.webp",
 "w": 1200,
 "h": 531,
 "url": "https://mealit.kr/",
-"img": "https://mealit.kr/_dj/img/(Pc)main%EB%B0%B0%EB%84%88_%EB%B8%94%EB%9E%99%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4.jpg",
 "archived": "2026-11-26"
 },
 {
-"id": "medicube",
+"id": "mealit_1",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_mealit_1.webp",
+"w": 1200,
+"h": 531,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_2",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_mealit_2.webp",
+"w": 1200,
+"h": 531,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_3",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_mealit_3.webp",
+"w": 1200,
+"h": 531,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_4",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_mealit_4.webp",
+"w": 1200,
+"h": 531,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_5",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_mealit_5.webp",
+"w": 1200,
+"h": 439,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "mealit_6",
+"brand": "밀잇 (MEAL IT)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_mealit_6.webp",
+"w": 1200,
+"h": 439,
+"url": "https://mealit.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "medioxyl_2",
+"brand": "메디옥실 (Medioxyl)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_medioxyl_2.webp",
+"w": 1200,
+"h": 406,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "medioxyl_3",
+"brand": "메디옥실 (Medioxyl)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_medioxyl_3.webp",
+"w": 1200,
+"h": 406,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "medioxyl_4",
+"brand": "메디옥실 (Medioxyl)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_medioxyl_4.webp",
+"w": 1200,
+"h": 400,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "medioxyl_5",
+"brand": "메디옥실 (Medioxyl)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_medioxyl_5.webp",
+"w": 1200,
+"h": 406,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_0",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_melable_0.webp",
+"w": 1050,
+"h": 700,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_1",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_1.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_2",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_melable_2.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_3",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_3.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_4",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_4.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_5",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_5.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_6",
+"brand": "메라블 (melable)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_6.webp",
+"w": 1200,
+"h": 279,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_7",
+"brand": "메라블 (melable)",
+"title": "U-Therable Line 푹 꺼져있던 공간까지 다시 차오르는 볼륨 구매하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_7.webp",
+"w": 1200,
+"h": 768,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_8",
+"brand": "메라블 (melable)",
+"title": "RubyRN Line 고농축 PDRN 성분으로 기미, 미백을 한 번에 구매하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_8.webp",
+"w": 1200,
+"h": 768,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "melable_9",
+"brand": "메라블 (melable)",
+"title": "Pore Care Line 급속 모공 수축 집중 케어 솔루션 구매하기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_melable_9.webp",
+"w": 1200,
+"h": 768,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "nightsaren_2",
+"brand": "나잇사렌 (NIGHT SAREN)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_nightsaren_2.webp",
+"w": 1200,
+"h": 613,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "nightsaren_3",
+"brand": "나잇사렌 (NIGHT SAREN)",
+"title": "Clear Ages, Feel Lighter. 스위스와 프랑스에서 온 레시피, 나잇사렌. 리뷰 보러가기 ★★",
+"tags": [
+"모델"
+],
+"src": "bn_nightsaren_3.webp",
+"w": 1200,
+"h": 613,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "oable_1",
+"brand": "오어블 (Oable)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_oable_1.webp",
+"w": 1200,
+"h": 675,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "oable_2",
+"brand": "오어블 (Oable)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_oable_2.webp",
+"w": 1200,
+"h": 675,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "outcoma_0",
+"brand": "아웃코마 (outcoma)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_outcoma_0.webp",
+"w": 1200,
+"h": 575,
+"url": "https://outcoma.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "outcoma_3",
+"brand": "아웃코마 (outcoma)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_outcoma_3.webp",
+"w": 1200,
+"h": 825,
+"url": "https://outcoma.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_0",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_pcalm_0.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_1",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_pcalm_1.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_2",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_pcalm_2.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_3",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_pcalm_3.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_4",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_pcalm_4.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_5",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_pcalm_5.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "pcalm_6",
+"brand": "피캄 (P.CALM)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_pcalm_6.webp",
+"w": 1200,
+"h": 531,
+"url": "https://pcalm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "periderm_0",
+"brand": "페리덤",
+"title": "매일 씹는 습관으로 시작하는 구강 마이크로바이옴 케어 씹을수록 상쾌하게 데일리 덴탈 케어 자세히보기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_periderm_0.webp",
+"w": 1200,
+"h": 562,
+"url": "https://periderm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "periderm_1",
+"brand": "페리덤",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_periderm_1.webp",
+"w": 1200,
+"h": 562,
+"url": "https://periderm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "periderm_2",
+"brand": "페리덤",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_periderm_2.webp",
+"w": 1200,
+"h": 552,
+"url": "https://periderm.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "plus-air_0",
+"brand": "플러스에어 (Plus air)",
+"title": "DUAL JET PROFESSIONAL 두 개의 바람으로 완성하는 드라이",
+"tags": [
+"모델"
+],
+"src": "bn_plus-air_0.webp",
+"w": 1200,
+"h": 672,
+"url": "https://plus-air.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "plus-air_1",
+"brand": "플러스에어 (Plus air)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_plus-air_1.webp",
+"w": 1200,
+"h": 675,
+"url": "https://plus-air.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "plus-air_2",
+"brand": "플러스에어 (Plus air)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_plus-air_2.webp",
+"w": 1200,
+"h": 672,
+"url": "https://plus-air.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "plus-air_3",
+"brand": "플러스에어 (Plus air)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_plus-air_3.webp",
+"w": 1200,
+"h": 672,
+"url": "https://plus-air.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "plus-air_4",
+"brand": "플러스에어 (Plus air)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_plus-air_4.webp",
+"w": 1200,
+"h": 509,
+"url": "https://plus-air.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_0",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_0.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_1",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_propermarket_1.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_2",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이",
+"모델"
+],
+"src": "bn_propermarket_2.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_3",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_propermarket_3.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_4",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_4.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_5",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_5.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_6",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_6.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_7",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_7.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_8",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"라이프스타일"
+],
+"src": "bn_propermarket_8.webp",
+"w": 1200,
+"h": 562,
+"url": "https://yq2017.cdn-nhncommerce.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "propermarket_9",
+"brand": "프로퍼마켓 (PROPER MARKET)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_propermarket_9.webp",
+"w": 1200,
+"h": 525,
+"url": "https://propermarket.speedycdn.net/",
+"archived": "2026-11-26"
+},
+{
+"id": "purexin_0",
+"brand": "퓨렉신",
+"title": "스위스에서 온 검증된 포뮬라, 국내 출시 완료 퓨렉신은 지속 가능한 혁신을 실현합니다. Purexin™, I",
+"tags": [
+"모델"
+],
+"src": "bn_purexin_0.webp",
+"w": 1200,
+"h": 406,
+"url": "https://purexin.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "purexin_1",
+"brand": "퓨렉신",
+"title": "스위스의 혁신기술, 이제 약국에서도 만나보세요. 퓨렉신은 대한민국 국민의 건강한 일상을 함께 고민합니다.",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_purexin_1.webp",
+"w": 1200,
+"h": 789,
+"url": "https://purexin.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "rawdive_0",
+"brand": "로다이브 (RAWDIVE)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_rawdive_0.webp",
+"w": 1200,
+"h": 331,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "rawdive_1",
+"brand": "로다이브 (RAWDIVE)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_rawdive_1.webp",
+"w": 1200,
+"h": 331,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "rawdive_2",
+"brand": "로다이브 (RAWDIVE)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_rawdive_2.webp",
+"w": 1200,
+"h": 331,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "saekdong_0",
+"brand": "색동 (Saekdong)",
+"title": "잡티 한톨도 놓치지 않는 차세대 흔적 케어 코직애씨드 터메릭 나이아신아마이드 밀키토너 Kojic Acid T",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_saekdong_0.webp",
+"w": 1200,
+"h": 562,
+"url": "https://saekdong.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "saekdong_1",
+"brand": "색동 (Saekdong)",
+"title": "잡티 한톨도 놓치지 않는 차세대 흔적 케어 코직애씨드 터메릭 나이아신아마이드 밀키토너 Kojic Acid T",
+"tags": [
+"제품 연출"
+],
+"src": "bn_saekdong_1.webp",
+"w": 1200,
+"h": 723,
+"url": "https://saekdong.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "saekdong_2",
+"brand": "색동 (Saekdong)",
+"title": "잡티 한톨도 놓치지 않는 차세대 흔적 케어 코직애씨드 터메릭 나이아신아마이드 밀키토너 Kojic Acid T",
+"tags": [
+"제품 연출"
+],
+"src": "bn_saekdong_2.webp",
+"w": 1200,
+"h": 562,
+"url": "https://saekdong.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "saekdong_3",
+"brand": "색동 (Saekdong)",
+"title": "잡티 한톨도 놓치지 않는 차세대 흔적 케어 코직애씨드 터메릭 나이아신아마이드 밀키토너 Kojic Acid T",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_saekdong_3.webp",
+"w": 1200,
+"h": 562,
+"url": "https://saekdong.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "saekdong_4",
+"brand": "색동 (Saekdong)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_saekdong_4.webp",
+"w": 1200,
+"h": 639,
+"url": "https://saekdong.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "seamlesslab_0",
+"brand": "심리스랩 (Seamless lab)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_seamlesslab_0.webp",
+"w": 1200,
+"h": 586,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "seorimax_2",
+"brand": "서리맥스 (SEORIMAX)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_seorimax_2.webp",
+"w": 1200,
+"h": 406,
+"url": "https://seorimax.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "silimazen_0",
+"brand": "시리마젠 (Silimazen)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_silimazen_0.webp",
+"w": 1200,
+"h": 508,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "silimazen_1",
+"brand": "시리마젠 (Silimazen)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_silimazen_1.webp",
+"w": 1200,
+"h": 375,
+"url": "https://file.cafe24cos.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "solcut_0",
+"brand": "솔컷 (SOL-CUT)",
+"title": "매일 선착순 10명 재구매 30% 할인 한 번만 구매해도 VIP 혜택받기",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_solcut_0.webp",
+"w": 1200,
+"h": 485,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "solcut_1",
+"brand": "솔컷 (SOL-CUT)",
+"title": "솔커트는 진심을 담아 100% 환불 보장을 약속합니다. 몸에 건강한 변화를 주는 일이니까, 망설여지시죠? 상",
+"tags": [
+"제품 연출"
+],
+"src": "bn_solcut_1.webp",
+"w": 1200,
+"h": 485,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "solcut_2",
+"brand": "솔컷 (SOL-CUT)",
+"title": "솔메이트 공식 서포터즈 모집 솔메이트 챌린지20일을 함께 기록할 분을 모십니다. 솔메이트 지원하기 >",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_solcut_2.webp",
+"w": 1200,
+"h": 470,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "solcut_3",
+"brand": "솔컷 (SOL-CUT)",
+"title": "4만원 쿠폰 제공 신규 회원 가입 회원 가입하고 쿠폰 받기 >",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_solcut_3.webp",
+"w": 1200,
+"h": 470,
+"url": "https://ecimg.cafe24img.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_0",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_soltice_0.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_1",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_soltice_1.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_2",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_soltice_2.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_3",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_soltice_3.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_4",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_soltice_4.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_5",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_soltice_5.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_6",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_soltice_6.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_7",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"모델",
+"혜택·이벤트"
+],
+"src": "bn_soltice_7.webp",
+"w": 1200,
+"h": 469,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_8",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_soltice_8.webp",
+"w": 1200,
+"h": 122,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "soltice_9",
+"brand": "솔티스 (Soltice)",
+"title": "메인 배너",
+"tags": [
+"혜택·이벤트"
+],
+"src": "bn_soltice_9.webp",
+"w": 1200,
+"h": 122,
+"url": "https://soltice.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "theohir_0",
+"brand": "오히어 (OHIR)",
+"title": "더 알아보기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_theohir_0.webp",
+"w": 1200,
+"h": 521,
+"url": "https://theohir.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "theohir_1",
+"brand": "오히어 (OHIR)",
+"title": "더 알아보기",
+"tags": [
+"모델"
+],
+"src": "bn_theohir_1.webp",
+"w": 1200,
+"h": 521,
+"url": "https://theohir.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "theohir_2",
+"brand": "오히어 (OHIR)",
+"title": "더 알아보기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_theohir_2.webp",
+"w": 1200,
+"h": 521,
+"url": "https://theohir.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "theohir_3",
+"brand": "오히어 (OHIR)",
+"title": "더 알아보기",
+"tags": [
+"모델"
+],
+"src": "bn_theohir_3.webp",
+"w": 1200,
+"h": 521,
+"url": "https://theohir.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "theohir_4",
+"brand": "오히어 (OHIR)",
+"title": "더 알아보기",
+"tags": [
+"모델"
+],
+"src": "bn_theohir_4.webp",
+"w": 1200,
+"h": 521,
+"url": "https://theohir.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "tiger-morning_0",
+"brand": "타이거모닝",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_tiger-morning_0.webp",
+"w": 1200,
+"h": 416,
+"url": "https://tiger-morning.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "tiger-morning_1",
+"brand": "타이거모닝",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_tiger-morning_1.webp",
+"w": 1080,
+"h": 748,
+"url": "https://tiger-morning.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "tiger-morning_2",
+"brand": "타이거모닝",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_tiger-morning_2.webp",
+"w": 1200,
+"h": 864,
+"url": "https://tiger-morning.com/",
+"archived": "2026-11-26"
+},
+{
+"id": "virenne_0",
+"brand": "비렌느 (VIRENNE)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_virenne_0.webp",
+"w": 1200,
+"h": 676,
+"url": "https://virenne.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "virenne_1",
+"brand": "비렌느 (VIRENNE)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_virenne_1.webp",
+"w": 1200,
+"h": 558,
+"url": "https://virenne.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "virenne_4",
+"brand": "비렌느 (VIRENNE)",
+"title": "고민 가득한 스팟은 X 비렌느로 본연의 피부 결을 찾다. For skin that looks calm and",
+"tags": [
+"제품 연출"
+],
+"src": "bn_virenne_4.webp",
+"w": 1200,
+"h": 558,
+"url": "https://virenne.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "virenne_5",
+"brand": "비렌느 (VIRENNE)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_virenne_5.webp",
+"w": 1200,
+"h": 674,
+"url": "https://virenne.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "virenne_6",
+"brand": "비렌느 (VIRENNE)",
+"title": "메인 배너",
+"tags": [
+"모델"
+],
+"src": "bn_virenne_6.webp",
+"w": 1200,
+"h": 756,
+"url": "https://virenne.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "wiseron_0",
+"brand": "위세론 (Wiseron)",
+"title": "위&장 강화 올인원 케어 위세론 헬리코부스터 Comfort begins inside. 더 알아보기",
+"tags": [
+"제품 연출"
+],
+"src": "bn_wiseron_0.webp",
+"w": 1200,
+"h": 557,
+"url": "https://wiseron.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "wiseron_1",
+"brand": "위세론 (Wiseron)",
+"title": "메인 배너",
+"tags": [
+"라이프스타일"
+],
+"src": "bn_wiseron_1.webp",
+"w": 1200,
+"h": 572,
+"url": "https://wiseron.co.kr/",
+"archived": "2026-11-26"
+},
+{
+"id": "younglong_2",
+"brand": "영롱 (YoungLong)",
+"title": "메인 배너",
+"tags": [
+"블랙프라이데이"
+],
+"src": "bn_younglong_2.webp",
+"w": 1200,
+"h": 463,
+"url": "https://younglong.net/",
+"archived": "2026-11-26"
+},
+{
+"id": "younglong_3",
+"brand": "영롱 (YoungLong)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_younglong_3.webp",
+"w": 1200,
+"h": 463,
+"url": "https://younglong.net/",
+"archived": "2026-11-26"
+},
+{
+"id": "younglong_4",
+"brand": "영롱 (YoungLong)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_younglong_4.webp",
+"w": 1200,
+"h": 463,
+"url": "https://younglong.net/",
+"archived": "2026-11-26"
+},
+{
+"id": "younglong_5",
+"brand": "영롱 (YoungLong)",
+"title": "메인 배너",
+"tags": [
+"제품 연출"
+],
+"src": "bn_younglong_5.webp",
+"w": 1200,
+"h": 463,
+"url": "https://younglong.net/",
+"archived": "2026-11-26"
+},
+{
+"id": "old_medicube_1",
 "brand": "메디큐브 (medicube)",
 "title": "블랙프라이데이 메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_medicube.webp",
+"src": "bn_old_medicube_1.webp",
 "w": 860,
 "h": 600,
 "url": "https://themedicube.co.kr/",
-"img": "https://themedicube.co.kr/web/upload/popup/2026/1130pop.jpg",
 "archived": "2026-11-26"
 },
 {
-"id": "medioxyl",
-"brand": "메디옥실 (Medioxyl)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_medioxyl.webp",
-"w": 1200,
-"h": 406,
-"url": "https://medioxyl.com/",
-"img": "https://ecimg.cafe24img.com/pg1727b70930811069/grinders001/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/61f61140481c75ade7972da9b1682eb8.png",
-"archived": "2026-11-26"
-},
-{
-"id": "meditherapy",
+"id": "old_meditherapy_2",
 "brand": "메디테라피 (MEDITHERAPY)",
 "title": "블랙프라이데이 메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_meditherapy.webp",
+"src": "bn_old_meditherapy_2.webp",
 "w": 780,
 "h": 1326,
 "url": "https://meditherapy.co.kr/",
-"img": "https://meditherapy.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/ec300328f9d5058fbc88369662204e7f.jpg",
 "archived": "2026-11-26"
 },
 {
-"id": "melable",
-"brand": "메라블 (melable)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_melable.webp",
-"w": 1200,
-"h": 279,
-"url": "https://melable.co.kr/",
-"img": "https://ecimg.cafe24img.com/pg568b56739155098/medilabo/web/upload/appfiles/AIFBrluHGdhkEsW6ewuLoA/e8c8dad8af197c7f43bd7ba79567ce38.webp",
-"archived": "2026-11-26"
-},
-{
-"id": "oable",
+"id": "old_oable_1",
 "brand": "오어블 (Oable)",
 "title": "블랙프라이데이 메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_oable.webp",
+"src": "bn_old_oable_1.webp",
 "w": 800,
 "h": 500,
 "url": "https://oable.kr/",
-"img": "https://ecimg.cafe24img.com/pg1168b61808261059/oableofficial/web/upload/appfiles/AIFBrluHGdhkEsW6ewuLoA/b341deabed1b632b714e871c5b65ef5b.webp",
 "archived": "2026-11-26"
 },
 {
-"id": "pcalm",
-"brand": "피캄 (P.CALM)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_pcalm.webp",
-"w": 1200,
-"h": 531,
-"url": "https://pcalm.co.kr/",
-"img": "https://pcalm.co.kr/web/upload/category/editor/2026/10/22/588fafa9a0e26df4c466d5685e4b479c.jpg",
-"archived": "2026-11-26"
-},
-{
-"id": "periderm",
-"brand": "페리덤",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_periderm.webp",
-"w": 1200,
-"h": 562,
-"url": "https://periderm.co.kr/",
-"img": "https://periderm.co.kr/images/main/main_visual_img_06.jpg",
-"archived": "2026-11-26"
-},
-{
-"id": "soltice",
-"brand": "솔티스 (Soltice)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_soltice.webp",
-"w": 1200,
-"h": 469,
-"url": "https://soltice.kr/",
-"img": "https://soltice.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/cb0af8a419a3431b7339476b9732df2e.jpg",
-"archived": "2026-11-26"
-},
-{
-"id": "virenne",
-"brand": "비렌느 (VIRENNE)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_virenne.webp",
-"w": 1200,
-"h": 558,
-"url": "https://virenne.co.kr/",
-"img": "https://virenne.co.kr/images/main/main_visual_img_bf_1.jpg",
-"archived": "2026-11-26"
-},
-{
-"id": "younglong",
-"brand": "영롱 (YoungLong)",
-"title": "블랙프라이데이 메인 배너",
-"tags": [
-"블랙프라이데이"
-],
-"src": "bn_younglong.webp",
-"w": 1200,
-"h": 462,
-"url": "https://younglong.net/",
-"img": "https://younglong.net/images/main/main_banner_bf_pc_20261123.webp",
-"archived": "2026-11-26"
-},
-{
-"id": "youngranu",
+"id": "old_youngranu_5",
 "brand": "영라뉴 (YOUNGRANU)",
 "title": "블랙프라이데이 메인 배너",
 "tags": [
 "블랙프라이데이"
 ],
-"src": "bn_youngranu.webp",
+"src": "bn_old_youngranu_5.webp",
 "w": 1200,
 "h": 1895,
 "url": "https://youngranu.co.kr/",
-"img": "https://youngranu.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/499a0ff0045e06db5c4590b0459ec4f5.jpg",
 "archived": "2026-11-26"
 }
 ]
