@@ -46,6 +46,9 @@ main{max-width:1280px;margin:0 auto;padding:24px 24px 64px}
 .sp img{width:100%;height:auto;display:block}
 .pthumb{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#fff}
 .pthumb img{width:100%;height:100%;object-fit:contain}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.bnthumb{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:#f4f4f4}
+.bnthumb img{width:100%;height:100%;object-fit:contain}
 .type.vtag{border-left:1px solid #ddd;padding-left:14px}
 .thumb .gif{position:absolute;top:6px;left:6px;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.55);color:#fff;font-size:9px;font-weight:700;letter-spacing:.04em;line-height:14px;pointer-events:none}
 .card:hover .thumb{border-color:var(--ink)}
@@ -178,19 +181,22 @@ async function saveFrame(s){try{let blob,ext;
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=fname(s)+"."+ext;document.body.appendChild(a);a.click();a.remove();toast("저장했어요")}catch(e){toast("저장하지 못했어요")}}
 const THUMB_TAGS=["식품","뷰티","기타","비밀링크","블랙프라이데이"];
 const THUMB_DESC={"식품":"식품·건강기능식품 상품 썸네일 (비밀링크·블프가 아닌 것)","뷰티":"뷰티 상품 썸네일 (비밀링크·블프가 아닌 것)","기타":"뷰티·식품으로 나누기 애매한 생활·디바이스 상품 썸네일","비밀링크":"상품 페이지나 썸네일에 '비밀링크' 표시가 있는 것. 블프와 겹치면 비밀링크 우선","블랙프라이데이":"썸네일 이미지에 '블프·블랙프라이데이'가 쓰인 것. 수집한 시점 그대로 보관"};
-let thumbs=[];
-Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t])=>{applyPend();
+let thumbs=[],banners=[];
+const BN="배너";const BANNER_TAGS=["블랙프라이데이"];const BANNER_DESC={"블랙프라이데이":"브랜드 공식몰 메인에 걸린 블프 배너. 수집한 시점(2026-11) 그대로 보관"};
+Promise.all([fetch("data.json",{cache:"no-cache"}).then(r=>r.json()),fetch(EFILE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>{energy=new Set(l)}),fetch("thumbs.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[]),fetch("banners.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,_e,t,bn])=>{applyPend();
   pages=d; d.forEach(p=>p.sections.forEach((s,i)=>all.push({...s,page:p,idx:i})));
   thumbs=t.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:"썸네일",url:x.url},th:x}));
+  banners=bn.map(x=>({type:x.tags.join(" · "),title:x.title,tags:x.tags,pieces:[{src:x.src,w:x.w,h:x.h}],page:{brand:x.brand,category:BN,url:x.url},th:{...x,id:"bn_"+x.id}}));
   draw();
   if(getTok())ghGet().then(c=>{energy=new Set(c.list);enSha=c.sha;applyPend();const y=scrollY;if(cur<0){draw();scrollTo(0,y)}}).catch(()=>{});
 }).catch(()=>{$("main").innerHTML='<div class="empty">데이터를 불러오지 못했어요. 새로고침해 주세요.</div>'});
 function draw(){
-  const CO=["뷰티","건기식","기타"];const cats=["전체",...CO,...[...new Set(pages.map(p=>p.category))].filter(c=>!CO.includes(c)),"썸네일",BP];
-  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c==="썸네일"?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  const CO=["뷰티","건기식","기타"];const cats=["전체",...CO,...[...new Set(pages.map(p=>p.category))].filter(c=>!CO.includes(c)),"썸네일",BN,BP];
+  $("cats").innerHTML=cats.map(c=>`<button type="button" class="cat${c==="썸네일"||c===BP?" bp":""}" aria-pressed="${st.cat===c}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   $("cats").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.cat=b.dataset.c;st.type="전체";draw()});
   if(st.cat==="썸네일"){drawThumbs();return;}
   if(st.cat===BP){drawBrands();return;}
+  if(st.cat===BN){drawBanners();return;}
   const inCat=all.filter(s=>st.cat==="전체"||s.page.category===st.cat);
   const types=TYPE_ORDER.filter(t=>inCat.some(s=>s.type===t));
   $("types").innerHTML=[["전체",inCat.length],...types.map(t=>[t,inCat.filter(s=>s.type===t).length])]
@@ -213,6 +219,16 @@ function drawThumbs(){
   const dsc=THUMB_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(THUMB_DESC[st.type])}</p>`:"";
   if(!shown.length){$("main").innerHTML=dsc+'<div class="empty">이 분류에 모아둔 썸네일이 아직 없어요.</div>';return;}
   $("main").innerHTML=dsc+`<div class="grid">${shown.map((x,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb pthumb"><img decoding="async" onerror="retryImg(this)" src="img/${esc(x.th.src)}" width="${x.th.w}" height="${x.th.h}" alt=""></div><span class="chip">${esc(x.page.brand)}</span><span class="t">${esc(x.title)}</span></button>`).join("")}</div>`;
+  $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
+}
+function drawBanners(){
+  $("types").innerHTML=[["전체",banners.length],...BANNER_TAGS.map(t=>[t,banners.filter(x=>x.tags.includes(t)).length])]
+    .map(([t,n])=>`<button type="button" class="type" aria-pressed="${st.type===t}" data-t="${esc(t)}">${esc(t)}${t==="전체"?"":`<span class="n">${n}</span>`}</button>`).join("");
+  $("types").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.type=b.dataset.t;draw()});
+  shown=banners.filter(x=>st.type==="전체"||x.tags.includes(st.type));
+  const dsc=BANNER_DESC[st.type]?`<p class="desc"><b>${esc(st.type)}</b>${esc(BANNER_DESC[st.type])}</p>`:"";
+  if(!shown.length){$("main").innerHTML=dsc+'<div class="empty">모아둔 배너가 아직 없어요.</div>';return;}
+  $("main").innerHTML=dsc+`<div class="bgrid">${shown.map((x,k)=>`<button type="button" class="card" data-k="${k}"><div class="thumb bnthumb"><img decoding="async" onerror="retryImg(this)" src="img/${esc(x.th.src)}" width="${x.th.w}" height="${x.th.h}" alt=""></div><span class="chip">${esc(x.page.brand)}</span><span class="t">${esc(x.title)}</span></button>`).join("")}</div>`;
   $("main").querySelectorAll(".card").forEach(b=>b.onclick=()=>open(+b.dataset.k));
 }
 const BP="[브랜드] 제품";
